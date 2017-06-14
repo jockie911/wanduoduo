@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.order.PayOrderActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/bgcolor_deep_old"
+                android:paddingTop="@dimen/dimen_12_dip">
+                <TextView
+                    android:id="@+id/temp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/c_127_130_134"
+                    android:text="@string/zhi_fu_sheng_yu_shi_jian"
+                    android:layout_gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="9dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimen_10_dip">
+                    <TextView android:id="@+id/tv_time_1"
+                        style="@style/tv_order_pay_time" />
+                    <TextView android:id="@+id/tv_time_2"
+                        style="@style/tv_order_pay_time"
+                        android:layout_marginLeft="@dimen/dimen_4_dip" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pay_order_time_bg_divide"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_8_dip"
+                        android:layout_marginRight="@dimen/dimen_8_dip"/>
+                    <TextView android:id="@+id/tv_time_3"
+                        style="@style/tv_order_pay_time" />
+                    <TextView android:id="@+id/tv_time_4"
+                        style="@style/tv_order_pay_time"
+                        android:layout_marginLeft="@dimen/dimen_4_dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/divide_5dp"/>
+
+            <include layout="@layout/common_order"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:background="@color/bgcolor_deep_old">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pay_order_way_icon"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:layout_marginLeft="@dimen/dimen_42_dip"
+                    android:text="@string/xuan_ze_zhi_fu_fang_shi"
+                    android:layout_centerVertical="true"/>
+                <View style="@style/divide_line"
+                    android:background="#1c2630"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_42_dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:paddingLeft="@dimen/dimen_42_dip"
+                android:background="@color/bgcolor_deep_old">
+                <ImageView
+                    android:id="@+id/icon_iv3"
+                    android:layout_width="@dimen/dimen_35_dip"
+                    android:layout_height="@dimen/dimen_35_dip"
+                    android:background="@drawable/icon_wallet"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/icon_iv3"
+                    android:layout_marginLeft="@dimen/dimen_13_dip"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/c_208_208_208"
+                        android:text="@string/pay_wallet" />
+                    <TextView
+                        android:id="@+id/tv_remain_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4_dip"
+                        android:textSize="10sp"
+                        android:textColor="@color/c_65_75_85"
+                        tools:text="余额：8"/>
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/cb_wallet"
+                    android:layout_width="@dimen/dimen_23_dip"
+                    android:layout_height="@dimen/dimen_23_dip"
+                    android:button="@drawable/time_cb_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"/>
+                <View style="@style/divide_line"
+                    android:background="#1c2630"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_42_dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_wx"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:paddingLeft="@dimen/dimen_42_dip"
+                android:background="@color/bgcolor_deep_old">
+                <ImageView
+                    android:id="@+id/icon_iv1"
+                    android:layout_width="@dimen/dimen_35_dip"
+                    android:layout_height="@dimen/dimen_35_dip"
+                    android:background="@drawable/icon_weixin"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:text="@string/pay_weinxin"
+                    android:layout_toRightOf="@+id/icon_iv1"
+                    android:layout_marginLeft="@dimen/dimen_13_dip"
+                    android:layout_centerVertical="true"/>
+                <CheckBox
+                    android:id="@+id/cb_weixin"
+                    android:layout_width="@dimen/dimen_23_dip"
+                    android:layout_height="@dimen/dimen_23_dip"
+                    android:button="@drawable/pay_cb_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"/>
+                <View style="@style/divide_line"
+                    android:background="#1c2630"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_42_dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:paddingLeft="@dimen/dimen_42_dip"
+                android:background="@color/bgcolor_deep_old">
+                <ImageView
+                    android:id="@+id/icon_iv2"
+                    android:layout_width="@dimen/dimen_35_dip"
+                    android:layout_height="@dimen/dimen_35_dip"
+                    android:background="@drawable/icon_zhifubao"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:text="@string/pay_zhifubao"
+                    android:layout_toRightOf="@+id/icon_iv2"
+                    android:layout_marginLeft="@dimen/dimen_13_dip"
+                    android:layout_centerVertical="true"/>
+                <CheckBox
+                    android:id="@+id/cb_zfb"
+                    android:layout_width="@dimen/dimen_23_dip"
+                    android:layout_height="@dimen/dimen_23_dip"
+                    android:button="@drawable/pay_cb_selector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgcolor">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dimen_15_dip"
+                    android:paddingTop="@dimen/dimen_16_dip"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/dimen_20_dip">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dian_ji_cha_kan"
+                        android:textColor="@color/c_65_75_85"/>
+                    <TextView
+                        android:id="@+id/tv_wdd_xieyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tui_kuan_gui_ze"
+                        android:textColor="@color/c_127_130_134"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bottom_color"
+        android:textSize="17sp"
+        android:textColor="@color/c_129_143_255"
+        android:text="@string/li_ji_zhi_fu"
+        android:gravity="center"/>
+</LinearLayout>

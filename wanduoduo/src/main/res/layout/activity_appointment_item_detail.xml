@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.appoint.AppointmentItemDetailActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:background="@color/bgcolor_deep">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bgcolor">
+
+            <include layout="@layout/common_person_info"/>
+
+            <View style="@style/divide_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip">
+                <ImageView
+                    android:id="@+id/iv_item_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+                <TextView android:id="@+id/tv_item_title"
+                    style="@style/info_style_textdrawable"
+                    tools:text="约人看电影"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tv_item_desc"
+                style="@style/info_style_textdrawable"
+                tools:text="找个人一起看电影"
+                android:layout_marginLeft="@dimen/dimen_25_dip"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/dimen_10_dip"/>
+            <com.wanduoduo.widget.MyGridView
+                android:id="@+id/mgv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_25_dip"
+                android:layout_marginRight="@dimen/dimen_60_dip"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_marginBottom="@dimen/dimen_8_dip"
+                android:horizontalSpacing="@dimen/dimen_10_dip"
+                android:verticalSpacing="@dimen/dimen_10_dip"
+                android:numColumns="3"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_8_dip">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot_appoint"
+                    android:layout_centerVertical="true"/>
+                <TextView android:id="@+id/tv_item_order"
+                    style="@style/info_style_textdrawable"
+                    tools:text="我买单"
+                    android:textSize="14sp"
+                    android:textColor="@color/c_mei_hong"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot_appoint"
+                    android:layout_centerVertical="true"/>
+                <TextView android:id="@+id/tv_item_sex"
+                    style="@style/info_style_textdrawable"
+                    tools:text="男女不限"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dot_appoint"
+                    android:layout_centerVertical="true"/>
+                <com.wanduoduo.widget.MyGridView
+                    android:id="@+id/mgv_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:numColumns="5"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20_dip"/>
+            <View style="@style/divide_5dp"
+                android:background="@color/bgcolor_deep"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_25_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15_dip">
+                    <ImageView
+                        android:id="@+id/iv_item_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/appoint_pub_location"
+                        android:layout_gravity="center_vertical"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_item_place"
+                    style="@style/tv_order_submit"
+                    tools:text="@string/di_zhi"/>
+                <View style="@style/divide_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_watch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_25_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15_dip">
+                    <ImageView
+                        android:id="@+id/iv_item_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/appoint_pub_time"
+                        android:layout_gravity="center_vertical"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_item_time"
+                    style="@style/tv_order_submit" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rel_chatting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/c_mei_hong"
+            android:text="@string/gan_xing_qu_liao_liao_kan"
+            android:drawablePadding="@dimen/dimen_8_dip"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_msg_selected"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

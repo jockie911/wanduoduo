@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:id="@+id/tv_item_prefection_place"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35_dip"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/c_65_75_85"
+        android:background="@drawable/shape_radius_5_414b55" />
+</RelativeLayout>

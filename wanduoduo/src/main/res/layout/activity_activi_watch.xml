@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.activi.ActiviWatchActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/bgcolor">
+        <TextView style="@style/info_style_textdrawable"
+            android:text="@string/gong_kai"/>
+        <View style="@style/divide_line"
+            android:layout_alignParentBottom="true"
+            android:background="#323e4a"/>
+        <CheckBox
+            android:id="@+id/cb_first"
+            android:layout_width="@dimen/dimen_23_dip"
+            android:layout_height="@dimen/dimen_23_dip"
+            android:button="@drawable/pay_cb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_marginRight="@dimen/dimen_15_dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_like"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/bgcolor1">
+        <TextView style="@style/info_style_textdrawable"
+            android:text="@string/jin_hu_xiang_xi_hu"/>
+        <View style="@style/divide_line"
+            android:layout_alignParentBottom="true"
+            android:background="#323e4a"/>
+        <CheckBox
+            android:id="@+id/cb_second"
+            android:layout_width="@dimen/dimen_23_dip"
+            android:layout_height="@dimen/dimen_23_dip"
+            android:button="@drawable/pay_cb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_marginRight="@dimen/dimen_15_dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_self"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/bgcolor1">
+        <TextView style="@style/info_style_textdrawable"
+            android:text="@string/jin_zi_ji_ke_jian"/>
+        <CheckBox
+            android:id="@+id/cb_third"
+            android:layout_width="@dimen/dimen_23_dip"
+            android:layout_height="@dimen/dimen_23_dip"
+            android:button="@drawable/pay_cb_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:clickable="false"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

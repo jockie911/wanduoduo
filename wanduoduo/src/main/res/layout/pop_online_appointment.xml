@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_activi_pop_appoint">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/xuan_ze_lei_xing"
+        android:textSize="17sp"
+        android:textColor="@color/c_208_210_211"
+        android:layout_marginTop="@dimen/dimen_13_dip"/>
+
+    <GridView
+        android:id="@+id/gv_pub_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:verticalSpacing="@dimen/dimen_20_dip"
+        android:layout_marginBottom="@dimen/dimen_18_dip"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.skill.PlayerSkillChooseActivity"
+    android:background="@color/bgcolor">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/player_skill_choose_once"
+            android:textColor="@color/c_127_130_134"
+            android:drawableLeft="@drawable/icon_warning"
+            android:drawablePadding="@dimen/dimen_8_dip"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_player_skill"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:background="@color/bgcolor_deep"/>
+    <RelativeLayout
+        android:id="@+id/rel_add_other_skill"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bottom_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/c_129_143_255"
+            android:text="@string/tian_jia_qi_ta_ji_neng"
+            android:drawablePadding="@dimen/dimen_8_dip"
+            android:drawableLeft="@drawable/icon_add"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

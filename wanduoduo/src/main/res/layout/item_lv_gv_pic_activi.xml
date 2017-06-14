@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/pic_default"/>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_pic_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/dimen_1_dip"
+        android:paddingBottom="@dimen/dimen_1_dip"
+        android:paddingLeft="@dimen/dimen_4_dip"
+        android:paddingRight="@dimen/dimen_4_dip"
+        android:drawablePadding="@dimen/dimen_2_dip"
+        android:gravity="center_vertical"
+        android:background="#55000000"
+        android:drawableLeft="@drawable/activi_pic_right_count"/>
+    <ImageView
+        android:id="@+id/iv_video_play"
+        android:layout_width="@dimen/dimen_45_dip"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:src="@drawable/icon_play"/>
+</RelativeLayout>

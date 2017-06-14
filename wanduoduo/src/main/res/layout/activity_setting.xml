@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.info.SettingActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rel_manage_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/zhang_hao_yu_an_quan"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+                <View style="@style/divide_line"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor_deep">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/xin_xiao_xi_tong_zhi"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_manage_black_people"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/guan_li_hei_ming_dan"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8_dip" />
+            <RelativeLayout
+                android:id="@+id/rel_forbidden"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/chu_fa_ming_dan"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+                <View style="@style/divide_line"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_kefu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="联系客服"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8_dip" />
+            <RelativeLayout
+                android:id="@+id/rel_msg_return"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/yi_jian_fan_kui"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+                <View style="@style/divide_line"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:visibility="gone"
+                android:background="@color/bgcolor_deep">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/gei_wo_men_ping_fen"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+                <View style="@style/divide_line"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_about_wdd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/guan_yu_wan_duo_duo"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8_dip" />
+
+            <RelativeLayout android:id="@+id/rel_plant_rule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/ping_tai_xing_wei_gui_fan"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <ImageView style="@style/info_style_jiantou"/>
+                <View style="@style/divide_line"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_clear_cash"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/qing_kong_huan_cun"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"/>
+                <TextView
+                    android:id="@+id/tv_cash_size"
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+                <ImageView style="@style/info_style_jiantou"/>
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20_dip" />
+
+            <RelativeLayout
+                android:id="@+id/rel_exit_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@color/bgcolor">
+                <TextView
+                    style="@style/tv_rel_skill_prefection_new"
+                    android:text="@string/tui_chu_wo_de_zhang_hao"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+</LinearLayout>

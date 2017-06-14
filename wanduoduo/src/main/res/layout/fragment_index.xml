@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/bottom_color"/>
+
+    <include layout="@layout/titie_bar_index"/>
+
+    <LinearLayout
+        android:id="@+id/col_ll_ability"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/bgcolor_deep">
+        <FrameLayout
+            android:id="@+id/fl_selected_ability"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_selected_ability"
+                style="@style/index_tv_tag_list"
+                android:text="@string/quan_bu_ji_neng"
+                android:drawableRight="@drawable/index_triangle_normal" />
+            <View
+                android:id="@+id/v_View"
+                android:layout_width="@dimen/dimen_1_dip"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_selected_sex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_selected_sex"
+                style="@style/index_tv_tag_list"
+                android:drawableRight="@drawable/index_triangle_normal"
+                android:text="@string/bu_xian_nan_nv" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_selected_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_selected_sort"
+                style="@style/index_tv_tag_list"
+                android:drawableRight="@drawable/index_triangle_normal"
+                android:text="@string/zhi_neng_pai_xu" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:wave_show="true"
+        app:wave_color="#00000000"
+        app:progress_backgroud_color="@color/bottom_color"
+        app:overlay="false"
+        app:isLoadMore="true">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <RelativeLayout style="@style/index_rel_categrie">
+                       <ImageView
+                           android:id="@+id/iv_same_city"
+                           android:layout_width="@dimen/dimen_46_dip"
+                           android:layout_height="@dimen/dimen_68_dip"
+                           android:src="@drawable/index_same_city_play_normal" />
+                   </RelativeLayout>
+                   <RelativeLayout style="@style/index_rel_categrie">
+                       <ImageView
+                           android:id="@+id/iv_food"
+                           android:layout_width="@dimen/dimen_46_dip"
+                           android:layout_height="@dimen/dimen_68_dip"
+                           android:src="@drawable/index_food_normal"/>
+                   </RelativeLayout>
+                   <RelativeLayout style="@style/index_rel_categrie">
+                       <ImageView
+                           android:id="@+id/iv_instrument"
+                           android:layout_width="@dimen/dimen_46_dip"
+                           android:layout_height="@dimen/dimen_68_dip"
+                           android:src="@drawable/index_instruments_normal"/>
+                   </RelativeLayout>
+                   <RelativeLayout style="@style/index_rel_categrie">
+                       <ImageView
+                           android:id="@+id/iv_exercise"
+                           android:layout_width="@dimen/dimen_46_dip"
+                           android:layout_height="@dimen/dimen_68_dip"
+                           android:src="@drawable/index_exercise_normal"/>
+                   </RelativeLayout>
+               </LinearLayout>
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/dimen_10_dip"
+                   android:layout_marginRight="@dimen/dimen_10_dip">
+                   <fragment
+                       android:id="@+id/index_gv_fragment"
+                       android:name="com.wanduoduo.fragment.index.IndexGridViewFragment"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+               </FrameLayout>
+           </LinearLayout>
+       </ScrollView>
+   </com.cjj.MaterialRefreshLayout>
+</LinearLayout>

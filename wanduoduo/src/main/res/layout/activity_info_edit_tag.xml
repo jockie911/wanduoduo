@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.wanduoduo.ui.info.InfoEditTagActivity"
+    android:background="@color/bgcolor_deep">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.moxun.tagcloudlib.view.TagCloudView
+        android:id="@+id/tag_cloud_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoScrollMode="uniform"
+        app:darkColor="#555"
+        app:lightColor="#aaa"
+        app:radiusPercent="0.6"
+        app:scrollSpeed="3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:id="@+id/ll_new_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:orientation="horizontal"/>
+    <TextView
+        android:id="@+id/tv_add_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/zi_ding_yi_tian_jia_biao_qian"
+        android:textSize="16sp"
+        android:drawablePadding="@dimen/dimen_14_dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_40_dip"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/popupwindow">
+
+    <FrameLayout
+        android:id="@+id/root_popupwindow"
+        android:layout_width="@dimen/dimen_120_dip"
+        android:layout_height="@dimen/dimen_270_dip"
+        android:background="@color/bgcolor_deep">
+        <ListView
+            android:id="@+id/root_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sub_popupwindow"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_270_dip"
+        android:layout_weight="1"
+        android:background="@color/bgcolor">
+        <ListView
+            android:id="@+id/sub_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgcolor"
+            android:layout_gravity="left|center_vertical"
+            android:scrollbars="none"
+            android:divider="@null"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <GridView
+        android:id="@+id/gv_send_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:horizontalSpacing="@dimen/dimen_8_dip"
+        android:verticalSpacing="@dimen/dimen_8_dip"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:background="@color/bgcolor_deep"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c_255_173_0"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/tv_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dimen_15_dip"
+            android:textColor="@color/c_255_173_0"
+            android:text="充值"/>
+    </RelativeLayout>
+</LinearLayout>

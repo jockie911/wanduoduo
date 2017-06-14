@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_15_dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="封禁理由："/>
+        <EditText
+            android:id="@+id/et_black_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:hint="理由"
+            android:gravity="top|left"
+            android:textColorHint="@color/c_127_130_134"
+            android:textColor="@color/c_208_208_208"
+            android:layout_marginTop="@dimen/dimen_8_dip"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:text="封禁天数："/>
+        <EditText
+            android:id="@+id/et_black_days"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:gravity="top|left"
+            android:inputType="number"
+            android:hint="30"
+            android:textColorHint="@color/c_127_130_134"
+            android:textColor="@color/c_208_208_208"
+            android:layout_marginTop="@dimen/dimen_8_dip"/>
+
+        <TextView
+            android:id="@+id/tv_black_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:text="@string/ti_jiao"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/c_129_143_255"/>
+    </LinearLayout>
+</RelativeLayout>

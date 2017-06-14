@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:text="@string/gen_ju_ding_wei_tui_jian"
+        android:gravity="center_vertical"
+        android:background="@color/bgcolor"
+        android:textColor="@color/white"
+        android:drawablePadding="@dimen/dimen_7_dip"
+        android:drawableLeft="@drawable/prefection_place"
+        android:paddingLeft="@dimen/dimen_15_dip"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="@dimen/dimen_77_dip"
+        android:layout_height="@dimen/dimen_34_dip"
+        android:text="定位中"
+        android:maxLength="3"
+        android:clickable="false"
+        android:ellipsize="middle"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:gravity="center"
+        android:textColor="@color/c_129_143_255"
+        android:layout_marginBottom="@dimen/dimen_27_dip"
+        android:layout_marginTop="@dimen/dimen_13_dip"
+        android:background="@drawable/shape_radius_5_818fff"/>
+
+</LinearLayout>

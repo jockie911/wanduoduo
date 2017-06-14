@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/item_tv_skill_choose_gv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_39_dip"
+        android:gravity="center"
+        android:textColor="@color/c_208_210_211"
+        android:textSize="16sp"
+        android:background="@drawable/shape_bg_item_player_skill_normal"/>
+
+</RelativeLayout>

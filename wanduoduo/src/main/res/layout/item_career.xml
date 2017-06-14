@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <TextView
+        android:id="@+id/tv_item_career"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:textColor="@color/c_204_204_204"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_15_dip"/>
+    <View style="@style/divide_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

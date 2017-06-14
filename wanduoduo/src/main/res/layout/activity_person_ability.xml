@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.skill.PersonAbilityActivity"
+    android:background="#19232d">
+
+    <include layout="@layout/base_title_bar"/>
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_dip"
+        android:layout_weight="1">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_250_dip">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_15_dip">
+                <LinearLayout
+                    android:id="@+id/container_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+                <View
+                    android:id="@+id/dot_view"
+                    android:layout_width="@dimen/dimen_7_dip"
+                    android:layout_height="@dimen/dimen_7_dip"
+                    android:background="@drawable/shape_dot_meihong"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View style="@style/divide_5dp"
+            android:background="#1d2731"/>
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dimen_15_dip">
+          <TextView
+              android:id="@+id/tv_desc_content"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dimen_10_dip"
+              android:textSize="16sp"
+              android:maxLines="2"
+              android:ellipsize="end"
+              android:layout_marginRight="@dimen/dimen_95_dip"
+              android:textColor="@color/white"/>
+          <RelativeLayout
+              android:layout_width="80dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="@dimen/dimen_15_dip"
+              android:layout_marginTop="@dimen/dimen_20_dip"
+              android:gravity="right">
+              <LinearLayout
+                  android:id="@+id/temp_ll"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/c_mei_hong"
+                      android:textSize="12sp"
+                      android:text="@string/money"
+                      android:gravity="center"/>
+
+                  <TextView
+                      android:id="@+id/tv_price"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/c_mei_hong"
+                      android:textSize="20sp"
+                      tools:text="188"
+                      android:gravity="center"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/c_mei_hong"
+                      android:textSize="14sp"
+                      android:text="/h"
+                      android:gravity="center"/>
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/tv_tag_name"
+                  android:layout_width="@dimen/dimen_60_dip"
+                  android:layout_height="@dimen/dimen_23_dip"
+                  android:layout_marginTop="@dimen/dimen_12_dip"
+                  android:layout_below="@+id/temp_ll"
+                  android:gravity="center"
+                  android:textColor="@color/c_mei_hong"
+                  android:textSize="13sp"
+                  android:background="@drawable/shape_meihong"/>
+             </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_server_count"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:textColor="@color/c_65_75_85"
+                android:layout_marginTop="@dimen/dimen_23_dip"
+                android:layout_below="@+id/tv_desc_content"/>
+        </RelativeLayout>
+
+        <View style="@style/divide_line"
+            android:background="#1f2933"/>
+
+    <include layout="@layout/common_person_info"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_pro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip">
+
+        <View style="@style/divide_line"
+            android:background="#1e2832"/>
+
+        <ImageView
+            android:id="@+id/icon_temp1"
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/prefection_certificate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_temp1"
+            android:layout_marginLeft="@dimen/dimen_11_dip"
+            android:text="@string/zhuan_ye_ji_neng_zheng_shu"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/c_208_210_211"/>
+        <TextView
+            android:id="@+id/tv_paper_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:drawableRight="@drawable/info_jiantou_right"
+            android:drawablePadding="@dimen/dimen_11_dip"
+            tools:text="3张优惠券"
+            android:textColor="@color/c_65_75_85"/>
+    </RelativeLayout>
+
+    <View style="@style/divide_5dp"
+        android:background="#1d2731"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_service_desc"
+            style="@style/tv_person_ability"
+            android:text="@string/fu_wu_shuo_ming"
+            android:textColor="@color/c_mei_hong"
+            android:drawableTop="@drawable/service_introduce_selected"/>
+
+        <TextView
+            android:id="@+id/tv_player_discuss"
+            style="@style/tv_person_ability"
+            android:text="@string/wan_jia_ping_jia"
+            android:drawableTop="@drawable/player_evaluation_normal"/>
+
+        <TextView
+            android:id="@+id/tv_other_ability"
+            style="@style/tv_person_ability"
+            android:text ="@string/qi_ta_ji_neng"
+            android:drawableTop="@drawable/other_skills_normal"/>
+    </LinearLayout>
+
+    <View style="@style/divide_line"
+        android:layout_marginLeft="@dimen/dimen_0_dip"/>
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+   </FrameLayout>
+    </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_color">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_32_dip"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_129_143_255"
+                android:textSize="12sp"
+                android:text="@string/money"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_129_143_255"
+                android:textSize="20sp"
+                tools:text="188"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_129_143_255"
+                android:textSize="14sp"
+                android:text="/h"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="@dimen/dimen_142_dip"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:text="@string/li_ke_yu_yue"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textColor="@color/c_129_143_255"
+            android:gravity="center"
+            android:background="@drawable/shape_bg_make_order"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

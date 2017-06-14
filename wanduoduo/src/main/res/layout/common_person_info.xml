@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/rel_person_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70_dip"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:background="@color/bgcolor_deep">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:src="@drawable/photo"
+            android:layout_centerVertical="true" />
+        <com.wanduoduo.widget.CircleImageView
+            android:id="@+id/iv_avctor"
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@+id/iv_vip"
+            android:layout_width="@dimen/dimen_15_dip"
+            android:layout_height="@dimen/dimen_15_dip"
+            android:layout_marginLeft="@dimen/dimen_30_dip"
+            android:layout_marginTop="@dimen/dimen_38_dip"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_avctor"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dimen_11_dip"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/c_208_210_211"
+                    tools:text = "jockie"/>
+                <TextView
+                    android:id="@+id/tv_activi_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:gravity="right"
+                    android:textSize="13sp"
+                    android:textColor="@color/c_65_75_85"
+                    tools:text = "1993_04"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:layout_marginRight="@dimen/dimen_15_dip">
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:drawablePadding="@dimen/dimen_1_dip"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dimen_3_dip"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dimen_3_dip"
+                    tools:text = "24"/>
+
+                <ImageView
+                    android:id="@+id/iv_vip_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_age"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"/>
+
+                <TextView
+                    android:id="@+id/tv_visit_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/c_65_75_85"
+                    android:visibility="invisible"
+                    tools:text = "1小时前"/>
+
+                <TextView
+                    android:id="@+id/tv_msg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/c_127_130_134"
+                    tools:text="1xiaoshi"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_jian_tou"
+            style="@style/info_style_jiantou"/>
+        <View android:id="@+id/v_bottom_line"
+            style="@style/divide_line"
+            android:layout_marginLeft="@dimen/dimen_0_dip"
+            android:background="@color/bgcolor"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

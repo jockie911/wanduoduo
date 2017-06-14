@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_ll_time"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/base_title_bar" />
+    <include layout="@layout/service_time" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/server_time_eg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip">
+        <CheckBox
+            android:id="@+id/cb_isrepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/time_cb_selector"
+            android:checked="true"
+            android:background="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认每7天循环"
+            android:layout_toRightOf="@+id/cb_isrepeat"
+            android:layout_marginLeft="@dimen/dimen_8_dip"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/c_127_130_134"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/server_time_eg2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"/>
+</LinearLayout>

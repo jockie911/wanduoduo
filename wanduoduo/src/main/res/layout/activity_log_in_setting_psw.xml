@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.LogInFindPsdActivity">
+    <include layout="@layout/base_title_bar"/>
+    <EditText
+        android:id="@+id/et_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/qing_shu_ru_shou_ji_hao"/>
+    <EditText
+        android:id="@+id/et_psw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/qing_shu_ru_yan_zheng_ma"/>
+    <EditText
+        android:id="@+id/et_confirm_psw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/qing_shu_ru_xin_mi_ma"/>
+    <TextView
+        android:id="@+id/tv_submite"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/que_ding_chong_zhi"
+        android:layout_height="50dp"
+        android:background="#999"/>
+</LinearLayout>

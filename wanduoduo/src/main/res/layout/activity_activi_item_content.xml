@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.activi.ActiviItemContentActivity">
+
+    <include layout="@layout/base_title_bar" />
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:wave_show="true"
+        app:wave_color="#00000000"
+        app:progress_backgroud_color="@color/bottom_color"
+        app:overlay="false"
+        app:isLoadMore="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_lv_activi"/>
+                <com.wanduoduo.widget.MyListView
+                    android:id="@+id/lv_discuss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="@dimen/dimen_0_dip"
+                    android:layout_marginTop="@dimen/dimen_5_dip"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.cjj.MaterialRefreshLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bottom_color"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/et_dis_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_50_dip"
+            android:hint="@string/dian_zhe_li_shu_ru_ping_lun"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColorHint="#aaaaaa"
+            android:textSize="13sp"
+            android:textColor="@color/c_208_210_211"
+            android:paddingLeft="@dimen/dimen_14_dip"
+            android:background="@drawable/shape_activi_discuss_bg"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="@dimen/dimen_50_dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/send"/>
+            <!--android:background="@drawable/shape_age_male"-->
+    </RelativeLayout>
+</LinearLayout>

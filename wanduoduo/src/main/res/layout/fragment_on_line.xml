@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.fragment.OnLineFragment">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.cjj.MaterialRefreshLayout
+            android:id="@+id/refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isLoadMore="true"
+            app:overlay="false"
+            app:wave_color="#00000000"
+            app:progress_backgroud_color="@color/bottom_color">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:id="@+id/content_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </ScrollView>
+        </com.cjj.MaterialRefreshLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen_20_dip">
+            <LinearLayout
+                android:id="@+id/ll_ivs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                android:layout_toStartOf="@+id/iv_select"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:visibility="invisible">
+                <ImageView
+                    android:id="@+id/iv_up_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/on_line_up_list"/>
+                <ImageView
+                    android:id="@+id/iv_invisable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/on_line_invisable"
+                    android:layout_marginTop="@dimen/dimen_18_dip"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/on_line_select"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

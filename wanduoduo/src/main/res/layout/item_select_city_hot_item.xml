@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_34_dip"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView android:id="@+id/tv_item_hot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_34_dip"
+        android:maxLength="3"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:textColor="@color/c_129_143_255"
+        android:background="@drawable/shape_radius_5_818fff" />
+</RelativeLayout>

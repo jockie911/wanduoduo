@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip">
+        <com.wanduoduo.widget.CircleImageView
+            android:id="@+id/civ_evalution_actor"
+            android:layout_width="@dimen/dimen_35_dip"
+            android:layout_height="@dimen/dimen_35_dip"
+            app:border_width="@dimen/dimen_0_dip"
+            android:src="@drawable/photo_default"/>
+        <LinearLayout
+            android:id="@+id/temp_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:layout_toRightOf="@+id/civ_evalution_actor"
+            android:layout_marginLeft="@dimen/dimen_9_dip"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_4_dip">
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/c_127_130_134"
+                android:text="jockie911"/>
+            <ImageView
+                android:id="@+id/iv_star"
+                android:layout_width="80dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/evalucation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/c_127_130_134"/>
+            <RelativeLayout
+                android:id="@+id/rel_detail_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_14_dip">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约1小时"
+                    android:textSize="13sp"
+                    android:textColor="@color/c_65_75_85"/>
+                <TextView
+                    android:layout_width="@dimen/dimen_120_dip"
+                    android:layout_height="wrap_content"
+                    android:text="来打羽毛球来打羽毛球来打羽毛球来打羽毛球"
+                    android:layout_alignParentRight="true"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/c_129_143_255" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_4_dip"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:textSize="14sp"
+            android:textColor="@color/c_69_74_80" />
+        <View style="@style/divide_line"
+            android:layout_below="@+id/temp_ll"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/dimen_10_dip"/>
+    </RelativeLayout>
+
+</FrameLayout>

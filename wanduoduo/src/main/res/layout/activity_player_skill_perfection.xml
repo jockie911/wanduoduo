@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context=".ui.skill.PlayerSkillPerfectionActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+                <ImageView
+                    android:layout_width="@dimen/dimen_4_dip"
+                    android:layout_height="@dimen/dimen_15_dip"
+                    android:background="@drawable/prefection_blue_block"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/temp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:textSize="17sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:text="@string/ji_neng_zhao_pian"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/temp1"
+                    android:text="@string/di_yi_zhang_mo_ren_wei"
+                    android:textSize="13sp"
+                    android:textColor="@color/c_65_75_85"
+                    android:layout_marginLeft="@dimen/dimen_7_dip"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:text="@string/cha_kan_shi_li"
+                    android:visibility="invisible"
+                    style="@style/tv_skill_perfection"
+                    android:drawableRight="@drawable/jian_tou_black"/>
+            </RelativeLayout>
+
+            <com.wanduoduo.widget.MyGridView
+                android:id="@+id/mgv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:horizontalSpacing="@dimen/dimen_15_dip"
+                android:verticalSpacing="@dimen/dimen_5_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:layout_marginBottom="@dimen/dimen_20_dip"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40_dip"
+                android:text="@string/qing_shang_chuan_yi_dao_liu_zhang"
+                android:gravity="right"
+                android:background="@color/bgcolor"
+                android:textSize="13sp"
+                android:textColor="@color/c_65_75_85"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:paddingRight="@dimen/dimen_15_dip"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+                <ImageView
+                    android:layout_width="@dimen/dimen_3_dip"
+                    android:layout_height="@dimen/dimen_15_dip"
+                    android:background="@drawable/prefection_blue_block"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:textSize="17sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:text="@string/ji_neng_shi_pin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/temp2"
+                    android:text="@string/xuan_tian"
+                    android:textSize="13sp"
+                    android:textColor="@color/c_65_75_85"
+                    android:layout_marginLeft="@dimen/dimen_7_dip"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:text="@string/cha_kan_shi_li"
+                    android:visibility="invisible"
+                    style="@style/tv_skill_perfection"
+                    android:drawableRight="@drawable/jian_tou_black"/>
+            </RelativeLayout>
+
+            <com.wanduoduo.widget.MyGridView
+                android:id="@+id/mgv_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:horizontalSpacing="@dimen/dimen_15_dip"
+                android:verticalSpacing="@dimen/dimen_5_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:layout_marginBottom="@dimen/dimen_20_dip"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40_dip"
+                android:text="@string/shang_chuan_de_shi_pin_bi_xu_he_ji_neng"
+                android:gravity="right"
+                android:background="@color/bgcolor"
+                android:textSize="13sp"
+                android:textColor="@color/c_65_75_85"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:paddingRight="@dimen/dimen_15_dip"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+                <ImageView
+                    android:layout_width="@dimen/dimen_3_dip"
+                    android:layout_height="@dimen/dimen_15_dip"
+                    android:background="@drawable/prefection_blue_block"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:textSize="17sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:text="@string/ji_neng_xiang_qing"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/rel_kind"
+                style="@style/rel_skill_prefection">
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_kind" />
+                <TextView style="@style/tv_rel_skill_prefection"
+                    android:text="@string/ji_neng_lei_xing"/>
+                <TextView android:id="@+id/tv_kind"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+            <View style="@style/divide_line"
+                android:background="@color/bgcolor_deep_old"/>
+
+            <RelativeLayout android:id="@+id/rel_title"
+                style="@style/rel_skill_prefection">
+                <ImageView style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_title" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/biao_ti"/>
+                <TextView android:id="@+id/tv_sub_title"
+                    style="@style/tv_skill_perfection"
+                    android:layout_marginLeft="80dp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"
+                android:background="@color/bgcolor_deep_old"/>
+            <RelativeLayout android:id="@+id/rel_price"
+                style="@style/rel_skill_prefection">
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_price" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/jia_ge"/>
+                <TextView android:id="@+id/tv_price"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/rel_communicate"
+                style="@style/rel_skill_prefection"
+                android:visibility="gone">
+                <View style="@style/divide_line"
+                    android:background="@color/bgcolor_deep_old"/>
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_price" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/gou_tong_fang_shi"/>
+                <TextView android:id="@+id/tv_communicate"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+            <View style="@style/divide_line"
+                android:background="@color/bgcolor_deep_old"/>
+
+            <RelativeLayout android:id="@+id/rel_time" style="@style/rel_skill_prefection">
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_time" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/xuan_ze_shi_jian"/>
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+            <View style="@style/divide_line"
+                android:background="@color/bgcolor_deep_old"/>
+
+            <RelativeLayout android:id="@+id/rel_place" style="@style/rel_skill_prefection">
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_place" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/xuan_ze_di_dian_qu_yu"/>
+                <TextView
+                    android:id="@+id/tv_place"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+            <View style="@style/divide_line"
+                android:background="@color/bgcolor_deep_old"/>
+
+            <RelativeLayout android:id="@+id/rel_desc" style="@style/rel_skill_prefection">
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_desc" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/yue_wan_shuo_ming"/>
+                <TextView
+                    android:id="@+id/tv_desc"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/rel_certificate"
+                style="@style/rel_skill_prefection"
+                android:visibility="gone">
+                <View style="@style/divide_line"/>
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_certificate" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/ji_neng_xiang_guan_zheng_shu"/>
+                <TextView
+                    android:id="@+id/tv_certificate"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rel_drink"
+                style="@style/rel_skill_prefection"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/img_skill_prefection"
+                    android:background="@drawable/prefection_drink" />
+                <TextView
+                    style="@style/tv_rel_skill_prefection"
+                    android:text="@string/shi_fo_jie_shou_yin_jiu"/>
+                <TextView
+                    android:id="@+id/tv_drink"
+                    style="@style/tv_skill_perfection" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bottom_color"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="@string/yu_lan"
+            android:textColor="@color/c_129_143_255"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/prefection_send_bg"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="@string/fa_bu"
+            android:textColor="@color/c_231_234_255"/>
+    </LinearLayout>
+</LinearLayout>

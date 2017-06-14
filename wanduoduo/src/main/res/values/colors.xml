@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0f1923</color>
+    <color name="colorPrimaryDark">#0f1923</color>
+    <color name="colorAccent">#f53172</color>
+    <color name="white">#ffffff</color>
+    <!--#############################################-->
+
+   <!-- <color name="bgcolor">#1d2731</color> //浅底色
+    <color name="bgcolor_deep">#19232d</color> //深背景色
+    <color name="divide_line">#202a34</color> //分割线
+    <color name="bottom_color">#0f1923</color> //底栏颜色-->
+
+    <color name="bgcolor_deep_old">#19232d</color> //老的深背景色
+    <color name="bgcolor_deep">#1d2731</color> //深背景色
+    <color name="bgcolor">#283440</color> //浅底色
+    <color name="bgcolor1">#283440</color> //浅底色
+    <color name="divide_line">#323e4a</color> //分割线
+    <color name="bottom_color">#0f1923</color> //底栏颜色
+
+    <!--<color name="new_divide_line">#323e4a</color>      //新的分割线的颜色-->
+    <!--<color name="new_bg">#283440</color>-->
+
+    <color name="c_208_210_211">#d0d2d3</color> //常用字体色
+    <color name="c_127_130_134">#7f8286</color> //常用字体色 中色
+    <color name="c_209_210_212">#d1d2d4</color> //常用字体色
+    <color name="c_69_74_80">#454a50</color> // 常用字体色 浅色
+    <color name="c_mei_hong">#f53172</color> // 玫红色
+    <color name="c_255_233_103">#ffe967</color>
+    <color name="c_255_243_175">#fff3af</color>
+    <color name="c_204_204_204">#cccccc</color>
+    // 紫色
+
+
+    <color name="gray">#8c8c8c</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="c_129_143_255">#818fff</color>
+    <color name="c_65_75_85">#414b55</color>
+
+    <color name="btn_normal">#1e262f</color>
+    <color name="btn_selected">#31386c</color>
+    <color name="prefection_send_bg">#2f3c7b</color>
+    <color name="c_231_234_255">#e7eaff</color>
+    <color name="c_34_48_61">#22303d</color>
+    <color name="c_55_65_75">#37414b</color>
+    <color name="c_102_102_102">#666666</color>
+    <color name="c_153_153_153">#999999</color>
+    <color name="c_239_83_90">#ef535a</color>
+    <color name="c_208_208_208">#d0d0d0</color>
+    <color name="c_144_158_226">#909ee2</color>
+    <color name="c_216_163_0">#d8a300</color>
+    <color name="c_245_49_114">#f53172</color>
+
+    <color name="sport">#9cbefb</color>
+    <color name="singer">#f4a96f</color>
+    <color name="food">#e79bc1</color>
+    <color name="travel">#00aaee</color>
+    <color name="c_255_173_0">#ffad00</color>
+
+    <color name="multiple_image_select_primaryDark">@color/bottom_color</color>
+
+
+
+    <color name="umeng_socialize_comments_bg">#F4F4F4</color>
+    <color name="umeng_socialize_color_group">#2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#333333</color>
+    <color name="umeng_socialize_list_item_bgcolor">#FFFFFF</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+    <color name="umeng_socialize_text_time">#999999</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="umeng_socialize_text_friends_list">#959696</color>
+    <color name="umeng_socialize_text_share_content">#666666</color>
+    <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
+    <color name="umeng_socialize_text_ucenter">#595959</color>
+    <color name="umeng_socialize_edit_bg">#C4C4C4</color>
+
+
+    <color name="black">#000000</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+</resources>
+

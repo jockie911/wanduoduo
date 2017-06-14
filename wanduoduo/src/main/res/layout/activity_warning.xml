@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_warning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.appoint.WarningActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:text="请您告诉我们举报的原因"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:textColor="@color/c_65_75_85"/>
+    <ListView
+        android:id="@+id/lv_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+    <TextView
+        android:id="@+id/tv_make_sure_chong_zhi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@drawable/shape_manage_tixian_bg_normal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_40_dip"
+        android:text="@string/que_ding"
+        android:clickable="false"
+        android:textSize="17sp"
+        android:textColor="#394471"/>
+
+</LinearLayout>

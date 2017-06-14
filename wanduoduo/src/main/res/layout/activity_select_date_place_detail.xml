@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context="com.wanduoduo.ui.order.SelectDatePlaceDetailActivity">
+    <include layout="@layout/base_title_bar"/>
+
+    <include layout="@layout/item_select_place_all"/>
+
+    <RelativeLayout android:id="@+id/rel_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:paddingLeft="@dimen/dimen_13_dip"
+        android:background="@color/bgcolor_deep">
+        <ImageView
+            style="@style/img_skill_prefection"
+            android:background="@drawable/select_place__home" />
+        <TextView style="@style/tv_rel_skill_prefection"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/dimen_30_dip"
+            android:text="张江高科"/>
+        <TextView style="@style/tv_skill_perfection" />
+        <View style="@style/divide_line"
+            android:layout_marginLeft="@dimen/dimen_0_dip"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rel_kind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:paddingLeft="@dimen/dimen_13_dip"
+        android:background="@color/bgcolor_deep">
+        <ImageView
+            style="@style/img_skill_prefection"
+            android:background="@drawable/select_place_phone" />
+        <TextView style="@style/tv_rel_skill_prefection"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/dimen_30_dip"
+            android:text="021-110110"/>
+        <TextView style="@style/tv_skill_perfection" />
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rel_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:paddingLeft="@dimen/dimen_13_dip"
+        android:background="@color/bgcolor_deep"
+        android:layout_marginTop="@dimen/dimen_5_dip">
+        <ImageView
+            style="@style/img_skill_prefection"
+            android:background="@drawable/select_place_msg" />
+        <TextView style="@style/tv_rel_skill_prefection"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/dimen_30_dip"
+            android:text="评价(10086)"/>
+        <TextView style="@style/tv_skill_perfection" />
+        <View style="@style/divide_line"
+            android:layout_marginLeft="@dimen/dimen_0_dip"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qing_ti_qian_tu_ding_hao"
+            android:textColor="@color/c_55_65_75"
+            android:drawableLeft="@drawable/icon_warning"
+            android:drawablePadding="@dimen/dimen_9_dip"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,665 @@
+<resources>
+    <string name="app_name">玩多多</string>
+
+
+    <string name="album_view">选择图片</string>
+    <string name="image_view">单击选择</string>
+    <string name="add">确定</string>
+    <string name="selected">已选</string>
+    <string name="limit_exceeded">最多能选 %d 张</string>
+
+    <!--个人中心-->
+    <string name="wo_de_shuoshuo">我的说说</string>
+    <string name="zui_jin_lai_fang">最近来访</string>
+    <string name="xi_huan_de_ren">喜欢的人</string>
+    <string name="wo_gou_mai_de_fu_wu">我购买的服务</string>
+    <string name="wo_de_zhang_hu">我的账户(会员)</string>
+    <string name="setting">设置</string>
+    <string name="ren_zheng_xing_xiang_shi_pin">认证形象视频</string>
+    <string name="zhi_ye_ren_zheng">职业认证</string>
+    <string name="bian_ji_zi_liao">编辑资料</string>
+    <string name="chong_zhi">充值</string>
+    <string name="wan_bi">玩币</string>
+    <string name="you_hui_quan">优惠券</string>
+    <string name="shui_kan_guo_wo">谁看过我</string>
+    <string name="dian_ji_ren_zheng">点击认证</string>
+
+
+    <!--个人中心 -> 编辑资料-->
+    <string name="xing_xiang_shi_pin_yi_ren_zheng">形象视频已认证</string>
+    <string name="jie_shi_wan_ban">结实玩伴</string>
+    <string name="shang_chuan_shi_pin">上传视频</string>
+    <string name="dian_ji_geng_gai_feng_mian">点击更改封面</string>
+    <string name="dang_an">档案</string>
+    <string name="dong_tai">动态</string>
+    <string name="yao_yue">邀约</string>
+    <string name="ji_neng">技能</string>
+    <string name="zi_liao">资料</string>
+    <string name="xiang_ce">相册</string>
+    <string name="ren_zheng">认证</string>
+    <string name="guan_yu_wo">关于我</string>
+    <string name="xiao_bian_zhuan_fang">小编专访</string>
+    <string name="shan_chang">擅长</string>
+    <string name="zui_man_yi_de_bu_wei">最满意的部位</string>
+    <string name="li_wu">礼物</string>
+    <string name="cha_kan_geng_duo">查看更多</string>
+    <string name="xiu_gai">修改</string>
+    <string name="gong_kai_zhao_pian">公开照片</string>
+    <string name="dian_ji_shang_chuan">点击上传</string>
+    <string name="yin_mi_zhao_pian">隐秘照片</string>
+    <string name="shou_ji_hao">手机号</string>
+    <string name="yi_tian_xie">已填写</string>
+    <string name="xing_xiang_shi_pin">形象视频</string>
+    <string name="ti_sheng_hui_tou_lv">提升回头率</string>
+    <string name="shen_fen_ren_zheng">身份认证</string>
+    <string name="wei_ren_zheng">未认证</string>
+
+    <!--登录-->
+    <string name="qing_shu_ru_shou_ji_hao">请输入手机号</string>
+    <string name="qing_shu_ru_mi_ma">请输入密码</string>
+    <string name="deng_lu">登录</string>
+    <string name="wang_ji_mi_ma">忘记密码?</string>
+    <string name="shi_yong_yan_zheng_ma_deng_lu">使用验证码登录</string>
+    <string name="shi_yong_di_san_fang_ruan_jian_deng_lu">使用第三方软件登录</string>
+    <string name="deng_lu_biao_shi_tong_yi_wan_duo_duo">登录表示同意万多多《注册协议》</string>
+    <string name="qing_shu_ru_yan_zheng_ma">请输入验证码</string>
+    <string name="qing_shu_ru_xin_mi_ma">请输入新密码</string>
+    <string name="dian_ji_huo_qu_yan_zheng_ma">点击获取验证码</string>
+    <string name="que_ding_chong_zhi">确定充值</string>
+    <string name="zhao_hui_mi_ma">找回密码</string>
+    <string name="tui_chu_deng_lu">退出登录</string>
+    <string name="huo_qu_yan_zheng_ma">获取验证码</string>
+    <string name="yan_zheng_ma">验证码</string>
+
+    <!--index-->
+    <string name="cheng_wei_wan_jia">成为玩家</string>
+    <string name="wan_duo_duo">玩多多</string>
+    <string name="quan_bu_ji_neng">全部技能</string>
+    <string name="bu_xian_nan_nv">不限男女</string>
+    <string name="zhi_neng_pai_xu">智能排序</string>
+    <string name="hui_yuan_zhong_xin">会员中心</string>
+    <string name="ji_neng_ren_zheng">技能认证</string>
+    <string name="player_skill_choose_once">一次只能添加一个技能</string>
+    <string name="wan_jia_ji_neng_xuan_ze">玩家技能选择</string>
+    <string name="xuan_ze_cheng_shi">选择城市</string>
+    <string name="ji_neng_zhao_pian">技能照片</string>
+
+
+    <string name="di_yi_zhang_mo_ren_wei">(第一张默认为封面照)</string>
+    <string name="cha_kan_shi_li">查看示例</string>
+    <string name="qing_shang_chuan_yi_dao_liu_zhang">*请上传1~6张和本人技能相关的图片</string>
+    <string name="ji_neng_shi_pin">技能视频</string>
+    <string name="xuan_tian">(选填)</string>
+    <string name="shang_chuan_de_shi_pin_bi_xu_he_ji_neng">*上传的视频内容必须和技能相关,仅限一个</string>
+    <string name="ji_neng_xiang_qing">技能详情</string>
+    <string name="ji_neng_lei_xing">技能类型</string>
+    <string name="biao_ti">标题</string>
+    <string name="jia_ge">价格(元/小时)</string>
+    <string name="wan_shan_ji_neng_xin_xi">完善技能信息</string>
+    <string name="gen_ju_ding_wei_tui_jian">根据您的定位推荐</string>
+    <string name="zhuan_ye_ji_neng_zheng_shu">专业技能证书</string>
+    <string name="li_ke_yu_yue">立刻预约</string>
+    <string name="wan_jia_ping_jia">玩家评价</string>
+    <string name="fu_wu_shuo_ming">服务说明</string>
+    <string name="qi_ta_ji_neng">其他技能</string>
+    <string name="ti_jiao_ding_dan">提交订单</string>
+    <string name="xuan_ze_shi_jian">选择时间</string>
+    <string name="xuan_ze_di_dian">选择地点</string>
+    <string name="you_hui_xin_xi">优惠信息</string>
+    <string name="App_shou_dan_you_hui">App首单优惠</string>
+    <string name="que_ren_yu_yue">确认预约</string>
+    <string name="bang_ding_shou_ji">绑定手机</string>
+    <string name="mi_ma">密码</string>
+    <string name="xia_yi_bu">下一步</string>
+    <string name="moblie_msg">绑定手机号，方便您收到订单消息</string>
+    <string name="make_sure_pay">确认并支付</string>
+    <string name="zhi_fu_sheng_yu_shi_jian">支付剩余时间</string>
+    <string name="ding_dan_xin_xi">订单信息</string>
+    <string name="yu_yue_shi_jian">预约时间</string>
+    <string name="yu_yue_chang_di">预约场地</string>
+    <string name="ding_dan_jin_e">订单金额</string>
+    <string name="ding_dan_biao_hao">订单编号</string>
+    <string name="xuan_ze_zhi_fu_fang_shi">选择支付方式</string>
+    <string name="pay_weinxin">微信支付</string>
+    <string name="pay_zhifubao">支付宝</string>
+    <string name="pay_wallet">钱包</string>
+    <string name="li_ji_zhi_fu">立即支付</string>
+    <string name="dian_ji_cha_kan">点击查看</string>
+    <string name="tui_kuan_gui_ze">退款规则</string>
+    <string name="tian_jia_qi_ta_ji_neng">添加其他技能</string>
+    <string name="shi_li">示例</string>
+    <string name="xuan_ze_di_dian_qu_yu">选择地点区域</string>
+    <string name="yue_wan_shuo_ming">约玩说明</string>
+    <string name="ji_neng_xiang_guan_zheng_shu">技能相关证书(选填)</string>
+    <string name="shi_fo_jie_shou_yin_jiu">是否接受饮酒</string>
+    <string name="yu_lan">预览</string>
+    <string name="fa_bu">发布</string>
+    <string name="zhi_neng_an_zhao_wo_she_ding">只能按照我设定的时间表来预约</string>
+    <string name="yu_yue_qian_xiang_wo">预约前向我商定确认时间</string>
+    <string name="ji_neng_deng_ji_zheng_shu">技能等级证书，职业证书或获奖证书(选填)</string>
+    <string name="quan_xuan">全选</string>
+    <string name="gou_tong_fang_shi">沟通方式</string>
+    <string name="shi_ming_ren_zheng">实名认证</string>
+    <string name="city_pick">城市选择</string>
+    <string name="xing_zheng_qu">行政区(可多选)</string>
+
+    <string name="zhang_hao_yu_an_quan">账号与安全</string>
+    <string name="xin_xiao_xi_tong_zhi">新消息通知</string>
+    <string name="guan_li_hei_ming_dan">管理黑名单</string>
+    <string name="chu_fa_ming_dan">处罚名单</string>
+    <string name="yi_jian_fan_kui">意见反馈</string>
+    <string name="gei_wo_men_ping_fen">给我们评分</string>
+    <string name="guan_yu_wan_duo_duo">关于玩多多</string>
+    <string name="ping_tai_xing_wei_gui_fan">平台行为规范</string>
+    <string name="qing_kong_huan_cun">清空缓存</string>
+    <string name="tui_chu_wo_de_zhang_hao">退出我的账号</string>
+    <string name="zong_shou_ru">总收入</string>
+    <string name="ji_jiang_dao_zhang">即将到账</string>
+    <string name="fa_bu_ji_neng">发布技能</string>
+    <string name="qu_ping_jia">去评价</string>
+    <string name="zhi_fu_bao_xing_ming">支付宝姓名</string>
+    <string name="qing_tian_xie">请填写</string>
+    <string name="zhi_fu_bao_zhang_hu">支付宝账户</string>
+    <string name="ti_xian_jin_e">提现金额</string>
+    <string name="rmb">￥</string>
+    <string name="quan_bu_ti_xian">全部提现</string>
+    <string name="shen_qing_ti_xian">申请提现</string>
+    <string name="qing_shu_ru_chuang_guan_guan_jian_zi">请输入场馆关关键字</string>
+    <string name="quan_bu_shang_quan">全部商圈</string>
+    <string name="qing_ti_qian_tu_ding_hao">请提前预定好场地哦</string>
+    <string name="yu_yue_cheng_gong">预约成功</string>
+    <string name="yu_yue_da_ren">预约达人</string>
+    <string name="liao_tian">聊天</string>
+    <string name="dui_huan">兑换</string>
+    <string name="qing_shu_ru_you_hui_ma">请输入优惠码</string>
+    <string name="yue_wan_quan">约玩券</string>
+    <string name="quan_ping_lei_shi_yong">全品类使用</string>
+    <string name="cha_kan">查看</string>
+    <string name="li_shi_you_hui_quan">历史优惠券</string>
+    <string name="xi_huan_wo">喜欢我</string>
+    <string name="wo_xi_huan">我喜欢</string>
+    <string name="hu_xiang_xi_huan">互相喜欢</string>
+    <string name="zhang_hu_yu_e">账户余额</string>
+    <string name="ti_xian">提现</string>
+    <string name="zhi_fu_an_quan">支付安全</string>
+    <string name="search_hint">上海/shanghai/sh</string>
+    <string name="discuss_hint_text">说说哪里满意，让更多的人知道Ta</string>
+    <string name="ni_ming_pin_lun">匿名评论</string>
+    <string name="ti_jiap_ping_jia">提价评价</string>
+    <string name="shan_chu_ji_neng">删除技能</string>
+    <string name="bian_ji_ji_neng">编辑技能</string>
+    <string name="ge_ren_zi_liao">个人资料</string>
+    <string name="ji_neng_guan_li">技能管理</string>
+    <string name="ji_ben_xin_xi">基本信息</string>
+    <string name="dian_ji_bian_ji">点击编辑</string>
+    <string name="zi_liao_ren_zheng">资料认证</string>
+    <string name="ni_cheng">昵称</string>
+    <string name="xing_bie">性别</string>
+    <string name="nian_lin">年龄</string>
+    <string name="xing_zuo">星座</string>
+    <string name="shen_gao">身高</string>
+    <string name="qing_gan_zhuang_kuang">情感状况</string>
+    <string name="suo_zai_di">所在地</string>
+    <string name="zhi_ye">职业</string>
+    <string name="shou_ru">收入</string>
+    <string name="shou_ji_hao_ma">手机号码</string>
+    <string name="dian_ji_xiu_gai">点击修改</string>
+    <string name="wo_de_biaoq_qian">我的标签</string>
+    <string name="wo_de_ge_xing_biao_qian">我的个性标签</string>
+    <string name="wo_de_xing_qu">我的兴趣</string>
+    <string name="wo_xi_huan_de_yun_dong">我喜欢的运动</string>
+    <string name="wo_xi_huan_de_ge_shou">我喜欢的歌手</string>
+    <string name="wo_xi_huan_de_mei_shi">我喜欢的美食</string>
+    <string name="wen_da">问答</string>
+    <string name="tian_jia_wen_ti">添加问题</string>
+    <string name="xi_huan">喜欢</string>
+    <string name="lai_fang_zhe">来访者</string>
+    <string name="wo_kan_guo_de_ren">我看过的人</string>
+    <string name="chong_zhi_jin_e">充值金额</string>
+    <string name="jin_e">金额</string>
+    <string name="she_zhi_zhi_fu_mi_ma">设置支付密码</string>
+    <string name="msg_return">请写下您的建议，玩多多将不断改进</string>
+    <string name="lian_xi_fang_shi">联系方式:  </string>
+    <string name="wo_xi_huan_de_lv_xing">我喜欢的旅行</string>
+    <string name="zi_ding_yi_tian_jia_biao_qian">自定义添加标签</string>
+    <string name="que_ding">确定</string>
+    <string name="shang_chuan_tou_xiang">上传头像</string>
+    <string name="qing_she_zhi_deng_lu_mi_ma">请设置登录密码</string>
+    <string name="qing_shu_ru_ni_cheng">请输入昵称</string>
+    <string name="nan">男</string>
+    <string name="nv">女</string>
+    <string name="jin_ru_wan_duo_duo">进入玩多多的世界</string>
+    <string name="zi_wo_jie_shao">自我介绍</string>
+    <string name="ji_neng_shi_zhan_di_qu">技能施展地区</string>
+    <string name="xiu_gai_mi_ma">修改密码</string>
+    <string name="xia_jia">下架</string>
+    <string name="fu_kuan">付款：</string>
+    <string name="deng_lu_mi_ma">登录密码</string>
+    <string name="qu_xiao">取消</string>
+    <string name="zui_duo_bu_chao_guo_liu">最多不超过6个汉字</string>
+    <string name="zhi_li_yu_da_zao">致力于打造垂直的旅游在线社交平台</string>
+    <string name="wdd_desc">\@Copyright 2015 玩多多</string>
+    <string name="ti_jiao">提交</string>
+    <string name="qing_shu_ru_nin_she_zhi_de_jia_ge">请输入您要设置的金额(元/时)</string>
+    <string name="jie_shou_ben_chan_pin">接受本产品的</string>
+    <string name="yu_yue_xie_yi">预约协议</string>
+    <string name="xi_tong_xiao_xi">系统消息：</string>
+    <string name="shou_dao_de_li_wu">收到的礼物</string>
+    <string name="ti_xian_zhi_yu_e">提现至余额</string>
+    <string name="wo_de_ren_qi_zhi">我的人气值：</string>
+    <string name="ke_dui_huan">    可兑换：</string>
+    <string name="wo_shou_dao_de_li_wu">我收到的礼物(0)</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cha_kan_dan_shen">查看单身</string>
+    <string name="gao_ji_shai_xuan">高级筛选</string>
+    <string name="pu_tong_shai_xuan">普通筛选</string>
+    <string name="pai_xu">排序</string>
+    <string name="shi_pin_ren_zheng">视频认证</string>
+    <string name="li_wo_zui_jin">离我最近</string>
+    <string name="zui_jin_huo_yue">最近活跃</string>
+    <string name="quan_bu">全部</string>
+    <string name="bu_xian">不限</string>
+    <string name="about_wdd_xieyi1">《平台合作协议》</string>
+    <string name="about_wdd_xieyi2">《平台预约协议》</string>
+    <string name="shi_fou_yin_jiu">是否饮酒</string>
+    <string name="shuo_dian_shen_me_ba">说点什么吧~</string>
+    <string name="di_zhi">地址</string>
+    <string name="dui_shui_ke_jian">对谁可见</string>
+    <string name="fen_xiang">分享</string>
+    <string name="gong_kai">公开</string>
+    <string name="jin_hu_xiang_xi_hu">仅互相喜欢的人可见</string>
+    <string name="jin_zi_ji_ke_jian">仅自己可见</string>
+    <string name="zan_wu_shu_ju">暂无数据</string>
+    <string name="dian_zhe_li_shu_ru_ping_lun">点这里输入评论</string>
+    <string name="send">发送</string>
+    <string name="xuan_ze_lei_xing">选择类型</string>
+    <string name="sui_xin_yue_sui_xin_shuo">随心约，随心说~</string>
+    <string name="fei_yong">费用</string>
+    <string name="wo_mai_dan">我买单</string>
+    <string name="tian_jia_biao_qian">添加标签</string>
+    <string name="di_dian">地点</string>
+    <string name="shi_jian">时间</string>
+    <string name="qing_xuan_ze_yun_dong_lei_xing">请选择运动类型</string>
+    <string name="chu_fa_di">出发点</string>
+    <string name="mu_di_di">目的地</string>
+    <string name="qiu_mai_dan">求买单</string>
+    <string name="xiao_xi">消息</string>
+    <string name="yu_ji_tian_shu">预计天数</string>
+    <string name="gan_xing_qu_liao_liao_kan">感兴趣聊聊看</string>
+    <string name="hui_fu">回复</string>
+    <string name="zhi_ding_liao_tian">置顶聊天</string>
+    <string name="xin_xiao_xi_ti_xing">新消息提醒</string>
+    <string name="fen_xiang_you_li">分享有礼</string>
+
+    <string-array name="tag_boy">
+        <item>阳光</item>
+        <item>单身贵族</item>
+        <item>事业型</item>
+        <item>逗逼</item>
+        <item>幽默</item>
+        <item>料理达人</item>
+        <item>死宅</item>
+        <item>成熟稳重</item>
+        <item>童心未泯</item>
+        <item>严谨</item>
+        <item>学识广博</item>
+        <item>乐享族</item>
+        <item>好好先生</item>
+        <item>正义</item>
+        <item>极品吃货</item>
+        <item>完美主义</item>
+        <item>健身达人</item>
+        <item>AJ控</item>
+        <item>爱自由</item>
+        <item>二次元</item>
+        <item>好脾气</item>
+    </string-array>
+
+    <string-array name="tag_girl">
+        <item>文艺女青年</item>
+        <item>正能量</item>
+        <item>心灵手巧</item>
+        <item>极品吃货</item>
+        <item>善良</item>
+        <item>二次元</item>
+        <item>女神</item>
+        <item>女神经</item>
+        <item>爱自由</item>
+        <item>文静</item>
+        <item>淑女范儿</item>
+        <item>幽默逗逼</item>
+        <item>完美主义</item>
+        <item>长发及腰</item>
+        <item>女汉子</item>
+        <item>料理达人</item>
+        <item>御姐</item>
+        <item>AJ控</item>
+    </string-array>
+
+    <!--    我喜欢的运动：-->
+    <string-array name="tag_sport">
+        <item>跑步</item>
+        <item>篮球</item>
+        <item>足球</item>
+        <item>游泳</item>
+        <item>骑行</item>
+        <item>徒步</item>
+        <item>潜水</item>
+        <item>滑雪</item>
+        <item>健身</item>
+        <item>滑板</item>
+        <item>骑马</item>
+        <item>网球</item>
+        <item>高尔夫</item>
+        <item>羽毛球</item>
+        <item>武术</item>
+        <item>拳击</item>
+        <item>赛车</item>
+        <item>跆拳道</item>
+        <item>皮划艇</item>
+        <item>攀岩</item>
+        <item>登山</item>
+        <item>乒乓球</item>
+        <item>保龄球</item>
+        <item>台球</item>
+    </string-array>
+
+    <!--    我喜欢的歌手：-->
+    <string-array name="tag_singer">
+        <item>周杰伦</item>
+        <item>王菲</item>
+        <item>田馥甄</item>
+        <item>五月天</item>
+        <item>薛之谦</item>
+        <item>tfboys</item>
+        <item>陈奕迅</item>
+        <item>张学友</item>
+        <item>Bigbang</item>
+        <item>邓紫棋</item>
+        <item>汪峰</item>
+        <item>林俊杰</item>
+        <item>鹿晗</item>
+        <item>张惠妹</item>
+        <item>李健</item>
+        <item>孙燕姿</item>
+        <item>张国荣</item>
+        <item>李宗盛</item>
+        <item>Beyond</item>
+        <item>Michael Jackson</item>
+        <item>Rihanna</item>
+        <item>Taylor swift</item>
+        <item>The Beatles</item>
+    </string-array>
+
+    <string-array name="tag_food">
+        <item>火锅</item>
+        <item>日本料理</item>
+        <item>西餐</item>
+        <item>韩国料理</item>
+        <item>粤菜</item>
+        <item>烧烤</item>
+        <item>麻小</item>
+        <item>川菜</item>
+        <item>泰国菜</item>
+        <item>东南亚菜</item>
+        <item>东北菜</item>
+        <item>湘菜</item>
+        <item>海鲜</item>
+        <item>西北菜</item>
+        <item>素食主义</item>
+        <item>无肉不欢</item>
+        <item>甜品至上</item>
+        <item>咖啡上瘾</item>
+    </string-array>
+
+    <string-array name="tag_travel">
+        <item>西藏</item>
+        <item>云南</item>
+        <item>稻城亚丁</item>
+        <item>越南</item>
+        <item>迪拜</item>
+        <item>帕劳</item>
+        <item>印度</item>
+        <item>威尼斯</item>
+        <item>斯里兰卡</item>
+        <item>圣托里尼</item>
+        <item>海地</item>
+        <item>古巴</item>
+        <item>马尔代夫</item>
+        <item>哥本哈根</item>
+        <item>德克萨斯</item>
+        <item>耶路撒冷</item>
+    </string-array>
+
+    <string-array name="question">
+        <item>最受不了什么样的人？</item>
+        <item>看过最喜欢的一部电影是什么？</item>
+        <item>读过最喜欢的一本书是什么？</item>
+        <item>最近最开心的一件事是什么？</item>
+        <item>你生活中有哪些特别的小习惯？</item>
+        <item>你觉得你不为人知的特质是什么？</item>
+        <item>最近最想做的一件事是什么？</item>
+        <item>什么样的异性最让你心动？</item>
+        <item>如果让你对前任说三个字，会说什么？</item>
+        <item>最近最想约人去干嘛？</item>
+        <item>如果男朋友/女朋友生气了会怎么哄？</item>
+    </string-array>
+
+    <string-array name="career">
+        <item>无</item>
+        <item>IT/互联网/通信</item>
+        <item>金融</item>
+        <item>法律</item>
+        <item>文化/艺术</item>
+        <item>影视/娱乐</item>
+        <item>教育/科研</item>
+        <item>建筑/房地产</item>
+        <item>医药/健康</item>
+        <item>能源/环保</item>
+        <item>政府机构</item>
+        <item>学生</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="appoint_traval">
+        <item>穷游</item>
+        <item>文艺</item>
+        <item>爱好摄影</item>
+        <item>休闲腐败</item>
+        <item>浪迹天涯</item>
+        <item>周边走走</item>
+        <item>散散心</item>
+        <item>自驾游</item>
+        <item>驴友</item>
+        <item>交友</item>
+    </string-array>
+
+    <string-array name="appoint_run">
+        <item>运动菜鸟</item>
+        <item>无虐不欢</item>
+        <item>塑型</item>
+        <item>减脂</item>
+        <item>健身狂</item>
+        <item>有型星人</item>
+        <item>健谈</item>
+        <item>随性</item>
+        <item>幽默</item>
+        <item>交友</item>
+    </string-array>
+
+    <string-array name="appoint_movie">
+        <item>电影达人</item>
+        <item>欧美</item>
+        <item>文艺片</item>
+        <item>科幻片</item>
+        <item>烧脑大片</item>
+        <item>健谈</item>
+        <item>随性</item>
+        <item>幽默</item>
+        <item>交友</item>
+    </string-array>
+
+    <string-array name="appoint_sing">
+        <item>麦霸</item>
+        <item>宇宙好声音</item>
+        <item>就爱听歌</item>
+        <item>搞气氛</item>
+        <item>粤语达人</item>
+        <item>随性</item>
+        <item>交友</item>
+        <item>逗逼</item>
+    </string-array>
+
+    <string-array name="appoint_eat">
+        <item>肉食动物</item>
+        <item>素食主义</item>
+        <item>大胃王</item>
+        <item>美食达人</item>
+        <item>甜品星人</item>
+        <item>无辣不欢</item>
+        <item>健谈</item>
+        <item>随性</item>
+        <item>交友</item>
+    </string-array>
+
+    ，，，，，，，，，
+    <string-array name="appoint_other">
+        <item>爱聊天</item>
+        <item>逗逼少年</item>
+        <item>大叔控</item>
+        <item>健谈</item>
+        <item>随性</item>
+        <item>交友</item>
+        <item>单身待解放</item>
+        <item>文艺青年</item>
+        <item>潜力股</item>
+        <item>乐活族</item>
+    </string-array>
+
+    <string-array name="appoint_title_run">
+        <item>篮球</item>
+        <item>足球</item>
+        <item>羽毛球</item>
+        <item>乒乓球</item>
+        <item>桌球</item>
+        <item>保龄球</item>
+        <item>高尔夫</item>
+        <item>网球</item>
+        <item>跑步</item>
+        <item>健身</item>
+        <item>瑜伽</item>
+        <item>攀岩</item>
+        <item>射箭</item>
+        <item>马术</item>
+        <item>溜冰</item>
+        <item>滑雪</item>
+    </string-array>
+
+
+    <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="umeng_socialize_network_break_alert" translatable="false">请连接网络后再尝试！</string>
+    <string name="umeng_socialize_comment" translatable="false">评论</string>
+    <string name="umeng_socialize_comment_detail" translatable="false">评论详情</string>
+    <string name="umeng_socialize_back" translatable="false">返回</string>
+    <string name="umeng_socialize_near_At" translatable="false">最近\@的好友</string>
+    <string name="umeng_socialize_friends" translatable="false">关注的好友</string>
+    <string name="umeng_socialize_send" translatable="false">发布</string>
+    <string name="umeng_socialize_tip_blacklist" translatable="false">对不起，因为违反了用户协议您已被禁言.</string>
+    <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败&#8230;</string>
+    <string name="umeng_socialize_msg_sec" translatable="false">秒前</string>
+    <string name="umeng_socialize_msg_min" translatable="false">分钟前</string>
+    <string name="umeng_socialize_msg_hor" translatable="false">小时前</string>
+    <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
+    <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
+
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+
+    <string name="umeng_socialize_share_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能，我们简化了社交平台的接入，为开发者提供坚实的基础服务。（一）支持各大主流社交平台，
+												（二）支持图片、文字、gif动图、音频、视频；@好友，关注官方微博等功能。
+												（三）提供详尽的后台用户社交行为分析。www.umeng.com/social</string>
+    <string name="umeng_socialize_login_qq">QQ空间</string>
+    <string name="umeng_socialize_login">登录</string>
+    <string name="umeng_socialize_text_choose_account">选择已有帐号登录</string>
+    <string name="umeng_socialize_text_authorize">授权</string>
+    <string name="umeng_socialize_text_unauthorize">未授权</string>
+    <string name="umeng_socialize_text_ucenter">个人中心</string>
+    <string name="umeng_socialize_text_login_fail">登录失败了，请重试</string>
+    <string name="umeng_socialize_text_comment_hint">说点什么吧&#8230;</string>
+    <string name="umeng_socialize_text_friend_list">好友列表</string>
+    <string name="umeng_socialize_text_visitor">游客</string>
+    <string name="umeng_socialize_text_tencent_no_connection">无法连接到腾讯微博客户端</string>
+    <string name="umeng_socialize_text_tencent_oauth_login_fail">授权登录失败</string>
+    <string name="umeng_socialize_text_tencent_version_no_match">版本不匹配，SSO只对微博客户端V3.8.1及以上的版本提供支持</string>
+    <string name="umeng_socialize_text_tencent_no_install">未安装腾讯微博客户端</string>
+    <string name="umeng_socialize_text_waitting">请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin_circle">跳转朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin">跳转易信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin_circle">跳转易信朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qzone">跳转QZone中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_redirect">跳转</string>
+    <string name="umeng_socialize_text_waitting_message">,请稍候...</string>
+    <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
+    <!-- 平台名称 -->
+    <string name="umeng_socialize_text_tencent_key">腾讯微博</string>
+    <string name="umeng_socialize_text_wenxin_fav">微信收藏</string>
+    <string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="umeng_socialize_text_renren_key">人人网</string>
+    <string name="umeng_socialize_text_douban_key">豆瓣网</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+    <string name="umeng_socialize_text_weixin_fav_key">微信收藏</string>
+    <string name="umeng_socialize_text_add_custom_platform">请配置用户平台</string>
+    <string name="umeng_example_home_btn_plus">社交分享</string>
+    <string name="umeng_socialize_text_waitting_share">分享中&#8230;</string>
+    <string name="umeng_socialize_content_hint">说点啥&#8230;</string>
+    <string name="umeng_socialize_cancel_btn_str">取消</string>
+    <string name="umeng_socialize_send_btn_str">发送</string>
+    <string name="umeng_socialize_img_des"></string>
+    <string name="umeng_socialize_share">分享</string>
+
+    <string name="umeng_socialize_mail">邮件</string>
+    <string name="umeng_socialize_sms">短信</string>
+    <string name="umeng_socialize_sina">新浪</string>
+    <string name="umeng_socialize_text_yixin_key">易信</string>
+    <string name="umeng_socialize_text_yixincircle_key">易信朋友圈</string>
+
+    <string name="umeng_socialize_text_laiwangdynamic_key">来往动态</string>
+    <string name="umeng_socialize_text_evernote_key">印象笔记</string>
+    <string name="umeng_socialize_text_ydnote_key">有道云笔记</string>
+    <string name="umeng_socialize_text_facebook_key">facebook</string>
+    <string name="umeng_socialize_text_twitter_key">twitter</string>
+    <string name="umeng_socialize_text_instagram_key">instagram</string>
+    <string name="umeng_socialize_text_pinterest_key">pinterest</string>
+    <string name="umeng_socialize_text_pocket_key">pocket</string>
+    <string name="umeng_socialize_text_linkedin_key">Linkedin</string>
+    <string name="umeng_socialize_text_foursquare_key">Foursquare</string>
+    <string name="umeng_socialize_text_whatsapp_key">WhatsApp</string>
+    <string name="umeng_socialize_text_line_key">LINE</string>
+    <string name="umeng_socialize_text_flickr_key">Flickr</string>
+    <string name="umeng_socialize_text_tumblr_key">Tumblr</string>
+    <string name="umeng_socialize_text_alipay_key">支付宝</string>
+    <string name="umeng_socialize_text_kakao_key">Kakao Talk</string>
+    <string name="umeng_socialize_text_googleplus_key">GooglePlus</string>
+    <string name="umeng_socialize_text_more_key">更多</string>
+    <string name="jia_ru_hei_ming_dan">加入黑名单</string>
+    <string name="re_men_cheng_shi">热门城市</string>
+    <string name="di_san_fang_deng_lu">第三方登录</string>
+    <string name="ying_si_tiao_kuan">隐私条款</string>
+    <string name="sui_xin">随心</string>
+    <string name="money">￥</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_activi_pop">
+        <TextView
+            android:id="@+id/tv_my_city"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="同城"
+            android:textSize="16sp"
+            android:textColor="@color/c_208_210_211"
+            android:gravity="center"/>
+        <View
+            android:layout_width="@dimen/dimen_83_dip"
+            android:layout_height="@dimen/dimen_0.5_dip"
+            android:background="#404e5e"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tv_all_city"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="全国"
+            android:textSize="16sp"
+            android:textColor="@color/c_208_210_211"
+            android:gravity="center"/>
+    </LinearLayout>
+</FrameLayout>

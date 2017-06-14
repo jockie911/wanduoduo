@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:orientation="vertical"
+    tools:context="com.wanduoduo.ui.MainActivity"
+    android:background="@color/bgcolor_deep">
+
+   <FrameLayout
+       android:id="@+id/content_container"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/bottom_color">
+
+        <FrameLayout
+            android:id="@+id/fl_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_msg"
+                style="@style/tv_main_bottom"
+                android:text="随心约"
+                android:drawableTop="@drawable/icon_appoint_normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_online"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_online"
+                style="@style/tv_main_bottom"
+                android:text="在线"
+                android:drawableTop="@drawable/icon_online_normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_index"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_index"
+                style="@style/tv_main_bottom"
+                android:textColor="@color/c_mei_hong"
+                android:text="约玩"
+                android:drawableTop="@drawable/icon_play_selected" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_activi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_activi"
+                style="@style/tv_main_bottom"
+                android:text="动态"
+                android:drawableTop="@drawable/icon_activi_normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/tv_info"
+                    style="@style/tv_main_bottom"
+                    android:text="我"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/icon_my_normal" />
+                <ImageView
+                    android:id="@+id/iv_unread"
+                    android:layout_width="@dimen/dimen_8_dip"
+                    android:layout_height="@dimen/dimen_8_dip"
+                    android:src="@drawable/rc_unread_count_bg"
+                    android:layout_alignRight="@+id/tv_info"
+                    android:visibility="invisible"
+                    android:layout_marginRight="@dimen/dimen_4_dip"
+                    android:layout_marginTop="@dimen/dimen_2_dip"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

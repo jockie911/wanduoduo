@@ -1,0 +1,9 @@
+<com.wanduoduo.widget.MyGridView android:id="@+id/index_gv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_10_dip"
+    android:layout_marginRight="@dimen/dimen_10_dip"
+    android:horizontalSpacing="8dp"
+    android:numColumns="2"
+    android:verticalSpacing="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

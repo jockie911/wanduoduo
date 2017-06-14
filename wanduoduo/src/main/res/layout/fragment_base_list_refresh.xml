@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.cjj.MaterialRefreshLayout
+       android:id="@+id/refreshlayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:wave_show="true"
+       app:wave_color="#00000000"
+       app:progress_backgroud_color="@color/bottom_color"
+       app:overlay="false"
+       app:isLoadMore="true">
+      <ListView
+          android:id="@+id/baselistview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingLeft="@dimen/dimen_15_dip"
+          android:paddingRight="@dimen/dimen_15_dip"
+          android:dividerHeight="@dimen/dimen_10_dip"
+          android:divider="@null"
+          android:scrollbars="none"/>
+   </com.cjj.MaterialRefreshLayout>
+
+   <TextView
+       android:id="@+id/tv_empty"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:textSize="15sp"
+       android:textColor="@color/c_127_130_134"
+       android:visibility="invisible"
+       android:text="@string/zan_wu_shu_ju"/>
+</RelativeLayout>

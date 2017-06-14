@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_40_dip">
+
+    <TextView
+        android:id="@+id/item_server_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30_dip"
+        android:textSize="16sp"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_10_dip"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:layout_marginBottom="@dimen/dimen_5_dip"
+        android:textColor="@color/c_65_75_85"
+        android:gravity="center" />
+</RelativeLayout>

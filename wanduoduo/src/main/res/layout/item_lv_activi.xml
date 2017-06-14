@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:id="@+id/rel_item_top"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/dimen_40_dip">
+        <TextView
+            android:id="@+id/tv_item_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:drawablePadding="@dimen/dimen_6_dip"
+            android:textColor="@color/c_127_130_134"/>
+        <ImageView
+            android:id="@+id/iv_item_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dimen_15_dip"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dimen_15_dip"
+            android:src="@drawable/index_city_selected_icon"/>
+        <View style="@style/divide_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include layout="@layout/common_person_info"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_15_dip"
+        android:textColor="@color/c_208_210_211"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:paddingRight="@dimen/dimen_15_dip"/>
+
+    <FrameLayout
+        android:id="@+id/fl_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip">
+        <com.wanduoduo.widget.MyGridView
+            android:id="@+id/mgv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/dimen_5_dip"
+            android:verticalSpacing="@dimen/dimen_5_dip"
+            android:numColumns="3"/>
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_map_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_12_dip"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/dimen_20_dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/activi_map_location"/>
+        <TextView
+            android:id="@+id/tv_location_place"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_5_dip"
+            android:paddingRight="@dimen/dimen_5_dip"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:maxLength="6"
+            android:ellipsize="marquee"
+            tools:text="张江高科"
+            android:background="@drawable/shape_activi_map_location"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_marginBottom="@dimen/dimen_18_dip">
+
+        <TextView
+            android:id="@+id/tv_read_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/c_127_130_134"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:drawablePadding="@dimen/dimen_8_dip"
+                android:textColor="@color/c_127_130_134"
+                android:drawableLeft="@drawable/activi_zan_normal"/>
+
+            <TextView
+                android:id="@+id/tv_discuss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:drawablePadding="@dimen/dimen_8_dip"
+                android:textColor="@color/c_127_130_134"
+                android:layout_marginLeft="@dimen/dimen_20_dip"
+                android:drawableLeft="@drawable/activi_discuss_normal"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <View style="@style/divide_line"
+            android:background="#323e4a"/>
+
+        <com.wanduoduo.widget.MyGridView
+            android:id="@+id/mgv_zan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/dimen_10_dip"
+            android:verticalSpacing="@dimen/dimen_10_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="15dp"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_marginBottom="@dimen/dimen_10_dip"/>
+    </LinearLayout>
+</LinearLayout>

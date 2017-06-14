@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context="com.wanduoduo.ui.info.InfoQuestionItemActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:textSize="16sp"
+        android:textColor="@color/c_127_130_134"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_15_dip"/>
+    <EditText
+        android:id="@+id/et_answer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_135_dip"
+        android:background="@color/bgcolor"
+        android:paddingTop="@dimen/dimen_15_dip"
+        android:paddingRight="@dimen/dimen_15_dip"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:gravity="left|top"
+        android:textSize="17sp"
+        android:maxLength="50"
+        android:textColor="@color/c_208_210_211"/>
+    <TextView
+        android:id="@+id/tv_text_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:text="0/20"
+        android:maxLength="20"
+        android:textSize="16sp"
+        android:textColor="@color/c_65_75_85"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/dimen_15_dip"/>
+
+    <TextView
+        android:id="@+id/tv_submit_answer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@drawable/shape_manage_tixian_bg_normal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:text="@string/que_ding"
+        android:textSize="17sp"
+        android:textColor="#394471"/>
+</LinearLayout>

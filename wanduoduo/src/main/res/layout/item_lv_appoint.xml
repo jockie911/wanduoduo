@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <include layout="@layout/common_person_info"/>
+
+    <View style="@style/divide_line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:layout_marginBottom="@dimen/dimen_25_dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:id="@+id/tv_item_title"
+                style="@style/info_style_textdrawable"
+                tools:text="约人看电影"
+                android:drawableLeft="@drawable/icon_tag_eat"
+                android:drawablePadding="@dimen/dimen_9_dip" />
+            <TextView android:id="@+id/tv_item_desc"
+                style="@style/info_style_textdrawable"
+                android:layout_width="match_parent"
+                tools:text="一起打羽毛球一起打羽毛球一起打一起打羽毛球一起打羽毛球一起打羽毛球一起打羽毛球羽毛球一起打羽毛球"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:drawableLeft="@drawable/dot_appoint"
+                android:drawablePadding="@dimen/dimen_9_dip"
+                android:textSize="@dimen/dimen_14_dip"
+                android:maxLines="3"
+                android:ellipsize="marquee"
+                android:textColor="@color/c_127_130_134"/>
+            <TextView android:id="@+id/tv_item_time"
+                style="@style/info_style_textdrawable"
+                tools:text="不限时间"
+                android:layout_marginTop="@dimen/dimen_11_dip"
+                android:drawableLeft="@drawable/dot_appoint"
+                android:drawablePadding="@dimen/dimen_9_dip"
+                android:textSize="@dimen/dimen_14_dip"
+                android:textColor="@color/c_127_130_134"/>
+            <TextView android:id="@+id/tv_item_place"
+                style="@style/info_style_textdrawable"
+                tools:text="张江高科张江高张江高科"
+                android:layout_marginTop="@dimen/dimen_11_dip"
+                android:drawableLeft="@drawable/dot_appoint"
+                android:drawablePadding="@dimen/dimen_9_dip"
+                android:textSize="@dimen/dimen_14_dip"
+                android:layout_marginRight="@dimen/dimen_100_dip"
+                android:textColor="@color/c_127_130_134"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_83_dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip">
+            <ImageView
+                android:id="@+id/iv_item_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_83_dip" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_item_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/c_127_130_134"
+            tools:text="1小时前"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:layout_marginBottom="@dimen/dimen_3_dip"/>
+    </RelativeLayout>
+</LinearLayout>

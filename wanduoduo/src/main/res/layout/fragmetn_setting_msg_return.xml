@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200_dip"
+        android:paddingTop="@dimen/dimen_15_dip"
+        android:paddingRight="@dimen/dimen_15_dip"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:textSize="16sp"
+        android:textColorHint="@color/c_65_75_85"
+        android:textColor="@color/c_127_130_134"
+        android:hint="@string/msg_return"
+        android:gravity="top|left"
+        android:textCursorDrawable="@drawable/et_cursor"
+        android:background="@color/bgcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:gravity="center_vertical"
+        android:background="@color/bgcolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:textSize="17sp"
+            android:textColor="@color/c_127_130_134"
+            android:text="@string/lian_xi_fang_shi"/>
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:textSize="15sp"
+            android:textColorHint="@color/c_65_75_85"
+            android:textColor="@color/c_127_130_134"
+            android:inputType="number"
+            android:maxLength="11"
+            android:hint="@string/qing_shu_ru_shou_ji_hao"/>
+    </LinearLayout>
+</LinearLayout>

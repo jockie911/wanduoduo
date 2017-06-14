@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wanduoduo.ui.NotifiSettingActivity"
+    android:background="@color/bgcolor_deep">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <View
+        android:id="@+id/v_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10_dip"
+        android:visibility="gone"/>
+
+    <include layout="@layout/common_person_info" />
+
+    <RelativeLayout android:id="@+id/rel_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bgcolor"
+        android:layout_marginTop="@dimen/dimen_10_dip">
+        <TextView
+            style="@style/info_style_textdrawable"
+            android:text="@string/xin_xiao_xi_ti_xing"
+            android:drawablePadding="0dp"/>
+        <ImageView
+            android:id="@+id/iv_is_new_msg_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip" />
+        <View style="@style/divide_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rel_msg_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bgcolor">
+        <TextView
+            style="@style/info_style_textdrawable"
+            android:text="@string/zhi_ding_liao_tian"
+            android:drawablePadding="0dp"/>
+        <ImageView
+            android:id="@+id/iv_is_chat_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip" />
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rel_black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bgcolor"
+        android:visibility="gone">
+        <View style="@style/divide_line"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            style="@style/info_style_textdrawable"
+            android:text="@string/jia_ru_hei_ming_dan"
+            android:drawablePadding="0dp"/>
+        <ImageView
+            android:id="@+id/iv_is_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip" />
+    </RelativeLayout>
+</LinearLayout>

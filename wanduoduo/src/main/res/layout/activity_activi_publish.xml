@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor_deep">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/bgcolor">
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_120_dip"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:layout_marginTop="@dimen/dimen_16_dip"
+                    android:layout_marginBottom="@dimen/dimen_5_dip"
+                    android:textColor="@color/c_208_210_211"
+                    android:textColorHint="@color/c_127_130_134"
+                    android:hint="@string/shuo_dian_shen_me_ba"
+                    android:textCursorDrawable="@drawable/et_cursor"
+                    android:gravity="left|top"/>
+                <com.wanduoduo.widget.MyGridView
+                    android:id="@+id/mgv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dimen_15_dip"
+                    android:paddingLeft="@dimen/dimen_15_dip"
+                    android:horizontalSpacing="@dimen/dimen_10_dip"
+                    android:layout_marginBottom="@dimen/dimen_15_dip"
+                    android:verticalSpacing="@dimen/dimen_10_dip"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:background="@color/bgcolor"
+                android:layout_marginTop="@dimen/dimen_10_dip">
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_25_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15_dip">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/activi_location_normal"
+                        android:layout_gravity="center_vertical"/>
+                </FrameLayout>
+                <TextView
+                    style="@style/tv_order_submit"
+                    android:text="@string/di_zhi"/>
+                <TextView android:id="@+id/tv_location"
+                    style="@style/tv_skill_perfection"
+                    android:drawableRight="@drawable/info_jiantou_right"
+                    android:textColor="@color/c_208_210_211"/>
+                <View style="@style/divide_line"
+                    android:background="#323e4a"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_40_dip"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_watch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:background="@color/bgcolor">
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_25_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15_dip">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/activi_eye_normal"
+                        android:layout_gravity="center_vertical"/>
+                </FrameLayout>
+                <TextView
+                    style="@style/tv_order_submit"
+                    android:text="@string/dui_shui_ke_jian"/>
+                <TextView
+                    android:id="@+id/tv_watch"
+                    style="@style/tv_skill_perfection"
+                    android:drawableRight="@drawable/info_jiantou_right"
+                    android:textColor="@color/c_208_210_211"/>
+                <View style="@style/divide_line"
+                    android:background="#323e4a"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="@dimen/dimen_40_dip"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:background="@color/bgcolor">
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_25_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15_dip">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/activi_share_normal"
+                        android:layout_gravity="center_vertical"/>
+                </FrameLayout>
+                <TextView
+                    style="@style/tv_order_submit"
+                    android:text="@string/fen_xiang"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:id="@+id/iv_share_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/activi_weixin_normal"/>
+                    <ImageView
+                        android:id="@+id/iv_share_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_7_dip"
+                        android:src="@drawable/activi_weibo_normal"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+</LinearLayout>

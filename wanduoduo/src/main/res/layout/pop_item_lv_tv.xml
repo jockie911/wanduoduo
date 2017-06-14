@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:id="@+id/fl_item_lv_pop"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip">
+        <TextView
+            android:id="@+id/tv_pop_item_lv_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/c_208_210_211"
+            android:textSize="16sp"
+            android:paddingLeft="@dimen/dimen_15_dip"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+</FrameLayout>

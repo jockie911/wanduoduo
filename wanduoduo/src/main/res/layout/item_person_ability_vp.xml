@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_69_74_80">
+
+    <io.rong.photoview.PhotoView
+        android:id="@+id/item_iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/item_iv_play"
+        android:layout_width="@dimen/dimen_56_dip"
+        android:layout_height="@dimen/dimen_56_dip"
+        android:src="@drawable/icon_play"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

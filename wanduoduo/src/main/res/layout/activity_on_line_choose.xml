@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor_deep">
+
+    <include layout="@layout/base_title_bar"/>
+
+   <com.wanduoduo.widget.ReboundsScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tv_normal_select"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_45_dip"
+               android:paddingLeft="@dimen/dimen_15_dip"
+               android:text="@string/pu_tong_shai_xuan"
+               android:gravity="center_vertical"
+               android:textSize="16sp"
+               android:textColor="@color/c_127_130_134"/>
+
+           <RelativeLayout android:id="@+id/rel_sort"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/pai_xu"
+                   android:drawablePadding="0dp"/>
+               <TextView
+                   android:id="@+id/tv_sort_nearby"
+                   style="@style/tv_on_line_sort"
+                   android:layout_width="@dimen/dimen_75_dip"
+                   android:text="@string/li_wo_zui_jin"
+                   android:layout_marginRight="@dimen/dimen_15_dip" />
+               <TextView
+                   android:id="@+id/tv_sort_activi"
+                   style="@style/tv_on_line_sort"
+                   android:layout_width="@dimen/dimen_75_dip"
+                   android:text="@string/zui_jin_huo_yue"
+                   android:layout_marginRight="@dimen/dimen_103_dip" />
+
+               <View style="@style/divide_line"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+
+           <RelativeLayout android:id="@+id/rel_sex"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/xing_bie"
+                   android:drawablePadding="0dp"/>
+
+               <TextView
+                   android:id="@+id/tv_sex_all"
+                   style="@style/tv_on_line_sort"
+                   android:layout_width="@dimen/dimen_60_dip"
+                   android:text="@string/quan_bu"
+                   android:layout_marginRight="@dimen/dimen_165_dip" />
+
+               <RelativeLayout
+                   android:id="@+id/rel_male"
+                   android:layout_width="@dimen/dimen_60_dip"
+                   android:layout_height="@dimen/dimen_35_dip"
+                   android:background="@drawable/shape_radius_5_414b55_online"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/dimen_90_dip"
+                   android:layout_centerVertical="true">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:textColor="@color/white"
+                       android:drawableLeft="@drawable/icon_male"
+                       android:drawablePadding="@dimen/dimen_3_dip"
+                       android:text="@string/nan" />
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:id="@+id/rel_female"
+                   android:layout_width="@dimen/dimen_60_dip"
+                   android:layout_height="@dimen/dimen_35_dip"
+                   android:background="@drawable/shape_radius_5_414b55_online"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/dimen_15_dip"
+                   android:layout_centerVertical="true">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:textColor="@color/white"
+                       android:drawableLeft="@drawable/icon_female"
+                       android:drawablePadding="@dimen/dimen_3_dip"
+                       android:text="@string/nv" />
+               </RelativeLayout>
+               <View style="@style/divide_line"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+
+           <RelativeLayout android:id="@+id/rel_place"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/suo_zai_di"
+                   android:drawablePadding="0dp"/>
+               <TextView android:id="@+id/tv_place"
+                   style="@style/tv_skill_perfection"
+                   android:textColor="@color/c_208_210_211"/>
+               <View style="@style/divide_line"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+
+           <RelativeLayout android:id="@+id/rel_video"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/shi_pin_ren_zheng"
+                   android:drawablePadding="0dp"/>
+                <ImageView
+                    android:id="@+id/iv_is_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip" />
+           </RelativeLayout>
+
+           <RelativeLayout android:id="@+id/rel_gift"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor"
+               android:visibility="gone">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/li_wu"
+                   android:drawablePadding="0dp"/>
+               <ImageView
+                   android:id="@+id/iv_is_gift"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/dimen_15_dip" />
+               <View style="@style/divide_line"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+
+           <TextView
+               android:id="@+id/tv_high_select"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_45_dip"
+               android:paddingLeft="@dimen/dimen_15_dip"
+               android:text="@string/gao_ji_shai_xuan"
+               android:gravity="center_vertical"
+               android:textSize="16sp"
+               android:textColor="@color/c_127_130_134"/>
+           <RelativeLayout android:id="@+id/rel_age"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/nian_lin"
+                   android:drawablePadding="0dp"/>
+               <TextView android:id="@+id/tv_age"
+                   style="@style/tv_skill_perfection"
+                   android:textColor="@color/c_208_210_211"
+                   android:text="@string/bu_xian"/>
+               <View style="@style/divide_line"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+           <RelativeLayout android:id="@+id/rel_height"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/shen_gao"
+                   android:drawablePadding="0dp"/>
+               <TextView android:id="@+id/tv_height"
+                   style="@style/tv_skill_perfection"
+                   android:textColor="@color/c_208_210_211"
+                   android:text="@string/bu_xian"/>
+               <View style="@style/divide_line"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+           <RelativeLayout android:id="@+id/rel_income"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:visibility="gone"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/shou_ru"
+                   android:drawablePadding="0dp"/>
+               <TextView android:id="@+id/tv_income"
+                   style="@style/tv_skill_perfection"
+                   android:text="@string/bu_xian"/>
+               <View style="@style/divide_line"
+                   android:background="#1e2832"
+                   android:layout_alignParentBottom="true"/>
+           </RelativeLayout>
+           <RelativeLayout android:id="@+id/rel_single"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_55_dip"
+               android:background="@color/bgcolor">
+               <TextView
+                   style="@style/info_style_textdrawable"
+                   android:text="@string/cha_kan_dan_shen"
+                   android:drawablePadding="0dp"/>
+
+               <ImageView
+                   android:id="@+id/iv_is_single"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/dimen_15_dip" />
+           </RelativeLayout>
+       </LinearLayout>
+   </com.wanduoduo.widget.ReboundsScrollView>
+</LinearLayout>

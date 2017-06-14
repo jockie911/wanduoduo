@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wanduoduo.ui.info.InfoZFAnquanActivity"
+    android:background="@color/bgcolor">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_set_psd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/bgcolor_deep"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/she_zhi_zhi_fu_mi_ma"
+            android:textColor="@color/c_208_210_211"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15_dip"/>
+        <TextView style="@style/tv_skill_perfection"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_change_psd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/bgcolor_deep"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/she_zhi_zhi_fu_mi_ma"
+            android:textColor="@color/c_208_210_211"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15_dip"/>
+        <TextView style="@style/tv_skill_perfection"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_forget_psd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/bgcolor_deep"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/she_zhi_zhi_fu_mi_ma"
+            android:textColor="@color/c_208_210_211"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15_dip"/>
+        <TextView style="@style/tv_skill_perfection"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

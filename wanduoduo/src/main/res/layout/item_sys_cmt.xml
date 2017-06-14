@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/common_person_info"/>
+
+       <ImageView
+           android:id="@+id/iv_rep"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/sys_cmt_rep"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="@dimen/dimen_15_dip"
+           android:layout_marginTop="@dimen/dimen_15_dip"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:textSize="16sp"
+        android:textColor="@color/c_208_210_211"/>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:background="@drawable/shape_radius_5_35404b"
+        android:layout_marginBottom="@dimen/dimen_15_dip">
+
+        <ImageView
+            android:id="@+id/iv_head_pic"
+            android:layout_width="@dimen/dimen_40_dip"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            android:layout_marginTop="@dimen/dimen_5_dip" />
+        <TextView
+            android:id="@+id/tv_self_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/c_208_210_211"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:layout_marginRight="@dimen/dimen_10_dip"/>
+    </LinearLayout>
+</LinearLayout>

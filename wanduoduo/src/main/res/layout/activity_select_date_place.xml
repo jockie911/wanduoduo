@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context=".ui.order.SelectDatePlaceAllActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dimen_85_dip"
+      android:orientation="vertical"
+      android:background="@color/bgcolor">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dimen_30_dip"
+          android:layout_marginTop="@dimen/dimen_9_dip"
+          android:layout_marginRight="@dimen/dimen_10_dip"
+          android:layout_marginLeft="@dimen/dimen_10_dip"
+          android:background="@drawable/shape_radius_15_2b343e">
+          <ImageView
+              android:id="@+id/temp_iv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/search"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"/>
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:layout_toRightOf="@+id/temp_iv"
+              android:layout_marginLeft="@dimen/dimen_10_dip"
+              android:gravity="center_vertical"
+              android:hint="@string/qing_shu_ru_chuang_guan_guan_jian_zi"
+              android:textSize="13sp"
+              android:textColor="@color/c_208_210_211"
+              android:textColorHint="@color/c_208_210_211"/>
+      </RelativeLayout>
+      
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <FrameLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+              <TextView
+                  android:id="@+id/tv_select_place"
+                  style="@style/index_tv_tag_list"
+                  android:text="@string/quan_bu_shang_quan"
+                  android:drawableRight="@drawable/index_triangle_normal" />
+          </FrameLayout>
+          <View
+              android:layout_width="@dimen/dimen_0.5_dip"
+              android:layout_height="@dimen/dimen_37_dip"
+              android:background="@drawable/divide_gray"
+              android:layout_gravity="center_vertical"/>
+          <FrameLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+              <TextView
+                  android:id="@+id/tv_selected_sort"
+                  style="@style/index_tv_tag_list"
+                  android:text="@string/zhi_neng_pai_xu"
+                  android:drawableRight="@drawable/index_triangle_normal" />
+          </FrameLayout>
+      </LinearLayout>
+  </LinearLayout>
+
+    <fragment
+        android:id="@+id/select_place_all_fragment"
+        android:name="com.wanduoduo.fragment.order.SelectDataPlaceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

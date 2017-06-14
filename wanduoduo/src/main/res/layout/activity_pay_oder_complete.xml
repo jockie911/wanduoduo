@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor_deep"
+    tools:context=".ui.order.PayOrderCompleteActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <com.wanduoduo.widget.ReboundsScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fl_yu_yue_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70_dip"
+                android:background="@color/bgcolor_deep_old"
+                android:layout_marginBottom="@dimen/dimen_5_dip">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:layout_gravity="center"
+                    android:text="@string/yu_yue_cheng_gong"
+                    android:textColor="@color/c_mei_hong"
+                    android:drawablePadding="@dimen/dimen_15_dip"
+                    android:drawableLeft="@drawable/order_ok_meihong"/>
+            </FrameLayout>
+            <include layout="@layout/common_order"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:background="@color/bgcolor_deep_old">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pay_order_info_icon"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"/>
+                <TextView
+                    android:id="@+id/tv_user_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/c_208_210_211"
+                    android:layout_marginLeft="@dimen/dimen_42_dip"
+                    android:text="@string/yu_yue_da_ren"
+                    android:layout_centerVertical="true"/>
+                <View style="@style/divide_line"
+                    android:layout_marginLeft="@dimen/dimen_42_dip"
+                    android:background="#1c2630"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="@dimen/dimen_27_dip"
+                android:gravity="center_vertical"
+                android:background="@color/bgcolor_deep_old">
+                <include layout="@layout/common_person_info"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.wanduoduo.widget.ReboundsScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_chatting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@color/bottom_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/liao_tian"
+            android:drawablePadding="@dimen/dimen_4_dip"
+            android:drawableLeft="@drawable/order_ok_msg"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+</LinearLayout>

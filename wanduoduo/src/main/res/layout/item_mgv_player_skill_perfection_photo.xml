@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.liuzhuang.rcimageview.RoundCornerImageView
+        android:id="@+id/gv_item_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70_dip"
+        android:src="#666666"
+        android:scaleType="centerCrop"
+        app:rciv_radius="@dimen/dimen_5_dip"
+        android:background="@drawable/buyadapter_default_pic"/>
+    <ImageView
+        android:id="@+id/iv_pic_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingBottom="@dimen/dimen_5_dip"
+        android:src="@drawable/pic_delete"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon_play"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

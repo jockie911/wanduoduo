@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context="com.wanduoduo.ui.index.ProPicActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <GridView
+        android:id="@+id/gvProPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:paddingRight="@dimen/dimen_15_dip"
+        android:verticalSpacing="@dimen/dimen_8_dip"
+        android:horizontalSpacing="@dimen/dimen_10_dip"
+        android:paddingTop="@dimen/dimen_10_dip"/>
+
+</LinearLayout>

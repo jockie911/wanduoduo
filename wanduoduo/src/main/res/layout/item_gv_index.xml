@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_225_dip"
+    android:background="@drawable/shape_radius_5_2b343e">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_170_dip">
+        <ImageView
+            android:id="@+id/item_iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_5_dip"
+            android:background="@drawable/index_gv" />
+        <ImageView
+            android:id="@+id/iv_sex_bg"
+            android:layout_width="50dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="45dp"
+            android:layout_height="28dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/item_iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dimen_14_dip"
+            android:layout_marginBottom="@dimen/dimen_15_dip"
+            android:src="@drawable/index_play"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12_dip"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="read the fucking source code"
+        android:textColor="@color/c_208_210_211"
+        android:layout_marginTop="@dimen/dimen_3_dip"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/item_tv_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3_dip"
+        android:layout_marginLeft="@dimen/dimen_12_dip"
+        android:text="jockie911"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/dimen_4_dip"
+        android:textColor="@color/c_127_130_134"/>
+</LinearLayout>

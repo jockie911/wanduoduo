@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wanduoduo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 友盟权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".base.BaseApp"
+        android:allowBackup="true"
+        android:anyDensity="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="QX886Bfid2UwqSe5GFWoWFQMZCwvBtFn" />
+
+        <!-- 融云的token  配置meta -->
+        <meta-data
+            android:name="sfci50a7cza4i"
+            android:value="VTwvKFCipwuK" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value=" 570b3ddde0f55ab7980000f3" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao" />
+        <!-- android:value="${UMENG_CHANNEL_VALUE}" -->
+        <!-- = = = = = = = = = = = = = = = = = = = = Activity-Begin= = = = = = = = = = = = = = = = = = = = = = -->
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MainTheme" />
+        <activity android:name=".ui.login.LogInActivity" />
+        <activity android:name=".ui.login.LogInFindPsdActivity" />
+        <activity android:name=".ui.login.LogInUseSmsCodeActivity" />
+        <activity android:name=".ui.info.SettingActivity" />
+        <activity android:name=".ui.authentication.AuthenticationRecordVideoActivity" />
+        <activity android:name=".ui.authentication.AuthenticationPlayVideoActivity" />
+        <activity android:name=".ui.skill.PersonAbilityActivity" />
+        <activity
+            android:name=".ui.index.SelectLocationActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.info.BindMobliePhoneActivity" />
+        <activity android:name=".ui.skill.PlayerSkillChooseActivity" />
+        <activity
+            android:name=".ui.skill.PlayerSkillPerfectionActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.order.SubmitOrderActivity" />
+        <activity android:name=".ui.order.PayOrderActivity" />
+        <activity android:name=".ui.skill.PlayerPerfectionItemActivity" />
+        <activity android:name=".ui.authentication.AuthenticationBeginActivity" />
+        <activity android:name=".ui.skill.ServerTimeActivity" />
+        <activity android:name=".ui.info.PlayCoinActivity" />
+        <activity android:name=".ui.info.CouponsActivity" />
+        <activity android:name=".ui.info.InfoEditorPersonActivity" />
+        <activity android:name=".ui.skill.PlayerSkillManageActivity" />
+        <activity android:name=".ui.order.SelectDatePlaceAllActivity" />
+        <activity android:name=".ui.order.SelectDatePlaceDetailActivity" />
+        <activity android:name=".ui.order.SelectDatePlaceMapActivity" />
+        <activity android:name=".ui.info.InfoDifferentActivity" />
+        <activity android:name=".ui.skill.PlayerSkillManageItemActivity" />
+        <activity android:name=".ui.order.PayOrderCompleteActivity" />
+        <activity android:name=".ui.info.InfoWritingEvaluationActivity" />
+        <activity android:name=".ui.info.InfoWritingEvaluationCompleteActivity" />
+        <activity android:name=".ui.info.InfoEditContentActivity" />
+        <activity android:name=".ui.info.InfoEditContentItemActivity" />
+        <activity android:name=".ui.info.InfoChongZhiActivity" />
+        <activity android:name=".ui.info.InfoZFAnquanActivity" />
+        <activity android:name=".ui.info.InfoSettingPsdActivity" />
+        <activity android:name=".ui.info.InfoEditTagActivity" />
+        <activity android:name=".ui.info.SettingItemActivity" />
+        <activity android:name=".ui.info.InfoQuestionActivity" />
+        <activity android:name=".ui.info.InfoQuestionItemActivity" />
+        <activity android:name=".ui.login.LogInCompleteInfoActivity" />
+        <activity android:name=".ui.info.InfoReceiveGiftActivity" />
+        <activity android:name=".ui.info.InfoPayCoinActivity" />
+        <activity android:name=".ui.index.ProPicActivity" />
+        <activity android:name=".ui.info.SettingMobileNumFirstActivity" />
+        <activity android:name=".ui.authentication.AuthenticationSkillOrCarActivity" />
+        <activity android:name=".ui.info.InfoVipActivity" />
+        <activity android:name=".base.BaseWebViewActivity" />
+        <activity android:name=".ui.info.SettingRealNameActivity" />
+        <activity android:name=".ui.info.InfoUserBillDetailActivity" />
+        <activity android:name=".ui.ShowPicActivity" />
+        <activity
+            android:name=".ui.SystemMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.wanduoduo"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.index.VideoPlayActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".ui.info.InfoVipChongZhiActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.index.DetailWebViewActivity" />
+        <activity android:name=".ui.online.OnLineChooseActivity" />
+        <activity android:name=".ui.activi.ActiviPublishActivity" />
+        <activity android:name=".ui.appoint.AppointmentItemDetailActivity" />
+        <activity android:name=".ui.authentication.AuthenticationPersonInfoActivity" />
+        <activity android:name=".ui.info.MsgActivity" />
+        <activity android:name=".ui.SystemCmtActivity" />
+        <activity android:name=".ui.NotifiSettingActivity" />
+        <activity android:name=".ui.authentication.AuthenticationEditVideoActivity" />
+        <activity android:name=".ui.activi.ActiviWatchActivity" />
+        <activity android:name=".ui.activi.ActiviItemContentActivity" />
+        <activity android:name=".ui.online.OnLinePublishAppointmentActivity" />
+        <activity android:name=".ui.activi.ActiviPublishSelectPlaceActivity" />
+        <!-- = = = = = = = = = = = = = = = = = = = = Activity-End= = = = = = = = = = = = = = = = = = = = = = -->
+
+        /!-- *************************************************************************************
+        --/
+
+        <!-- 支付宝支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".wxapi.WXPayEntryActivity" />
+
+        <!-- 融云会话列表 -->
+        <activity android:name=".ui.Conversation1Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.wanduoduo"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 聚合会话列表 -->
+        <!--
+        <activity
+            android:name=".ui.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.wanduoduo"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <receiver
+            android:name=".receiver.MessageNotificationReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="mabeijianxi.camera.MediaRecorderActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- 友盟分享 qq -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104909805" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".ui.PhotoActivity" />
+        <activity android:name=".ui.appoint.AppointMoiveActivity" />
+
+        <!-- 广播注册 -->
+        <receiver android:name="com.maiml.updatelibrary.receiver.InstallReceiver">
+            <intent-filter android:priority="20">
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".TestActivity" />
+        <activity android:name=".ui.appoint.WarningActivity" />
+        <activity android:name=".ui.skill.PerSonSkillActivity"></activity>
+    </application>
+
+</manifest>

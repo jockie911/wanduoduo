@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor_deep">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25_dip">
+        <TextView style="@style/tv_bigtag_person_center"
+            android:layout_marginTop="@dimen/dimen_0_dip"
+            android:text="@string/xiang_ce"/>
+        <TextView
+            android:id="@+id/tv_pic_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dimen_15_dip"
+            android:text="(0/0)"
+            android:textColor="@color/c_65_75_85"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.wanduoduo.widget.MyGridView
+        android:id="@+id/gv_pic_wall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:layout_marginTop="@dimen/dimen_25_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:horizontalSpacing="@dimen/dimen_8_dip"
+        android:verticalSpacing="@dimen/dimen_8_dip"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25_dip">
+        <TextView
+            style="@style/tv_bigtag_person_center"
+            android:text="@string/ji_ben_xin_xi"
+            android:layout_marginTop="@dimen/dimen_0_dip"/>
+        <TextView
+            android:id="@+id/tv_edit_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dimen_15_dip"
+            android:text="@string/dian_ji_bian_ji"
+            android:textColor="@color/c_129_143_255"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="13sp"
+        android:textColor="@color/c_34_48_61"
+        android:layout_marginTop="@dimen/dimen_5_dip"/>
+    <com.wanduoduo.widget.MyGridView
+        android:id="@+id/mgv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginTop="@dimen/dimen_25_dip"/>
+
+    <TextView
+        style="@style/tv_bigtag_person_center"
+        android:text="@string/zi_liao_ren_zheng"
+        android:layout_marginTop="@dimen/dimen_50_dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25_dip">
+
+        <LinearLayout android:id="@+id/ll_phone"
+            style="@style/ll_person_center">
+            <ImageView
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:src="@drawable/edit_phone"/>
+            <TextView style="@style/tv_person_center"
+                android:text="@string/shou_ji_hao_ma"/>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:textSize="14sp"
+                android:textColor="@color/c_65_75_85" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll_video" style="@style/ll_person_center">
+            <ImageView
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:src="@drawable/edit_video"/>
+            <TextView style="@style/tv_person_center"
+                android:text="@string/xing_xiang_shi_pin"/>
+            <TextView
+                android:id="@+id/tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:textSize="14sp"
+                android:textColor="@color/c_65_75_85" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll_id_card" style="@style/ll_person_center">
+            <ImageView
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:src="@drawable/edit_id_card"/>
+            <TextView style="@style/tv_person_center"
+                android:text="@string/shen_fen_ren_zheng"/>
+            <TextView android:id="@+id/tv_id_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:textSize="14sp"
+                android:textColor="@color/c_65_75_85" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll_skill" style="@style/ll_person_center">
+            <ImageView
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:src="@drawable/edit_skill"/>
+            <TextView
+                android:id="@+id/tv_auth_gender"
+                style="@style/tv_person_center"
+                android:text="@string/ji_neng_ren_zheng"/>
+            <TextView
+                android:id="@+id/tv_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:textSize="14sp"
+                android:textColor="@color/c_65_75_85" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_my_gift"
+        style="@style/tv_bigtag_person_center"
+        android:text="@string/shou_dao_de_li_wu"
+        android:layout_marginTop="@dimen/dimen_50_dip"
+        android:visibility="gone"/>
+
+    <com.wanduoduo.widget.MyGridView
+        android:id="@+id/mgv_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:layout_marginTop="@dimen/dimen_25_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:horizontalSpacing="@dimen/dimen_8_dip"
+        android:verticalSpacing="@dimen/dimen_8_dip"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_title_my_tag"
+        style="@style/tv_bigtag_person_center"
+        android:text="@string/wo_de_biaoq_qian"
+        android:layout_marginTop="@dimen/dimen_50_dip" />
+
+    <RelativeLayout
+        android:id="@+id/rel_my_tag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="false"
+        android:layout_marginTop="@dimen/dimen_20_dip">
+        <ImageView style="@style/iv_tag_person_center"
+            android:src="@drawable/edit_tag_my" />
+        <TextView android:id="@+id/tv_my_tag"
+            style="@style/tv_tag_person_center"
+            android:text="@string/wo_de_ge_xing_biao_qian"/>
+        <TextView style="@style/tv_skill_perfection"
+            android:layout_height="@dimen/dimen_50_dip"/>
+        <View style="@style/divide_line"
+            android:layout_marginLeft="0dp" />
+        <View style="@style/divide_line"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_my_intrest"
+        style="@style/tv_bigtag_person_center"
+        android:text="@string/wo_de_xing_qu"
+        android:layout_marginTop="@dimen/dimen_50_dip" />
+
+    <RelativeLayout
+        android:id="@+id/rel_sport"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:clickable="false"
+        android:layout_marginTop="@dimen/dimen_20_dip">
+        <ImageView style="@style/iv_tag_person_center"
+            android:src="@drawable/edit_tag_sport" />
+        <TextView android:id="@+id/tv_sport"
+            style="@style/tv_tag_person_center"
+            android:text="@string/wo_xi_huan_de_yun_dong" />
+        <TextView style="@style/tv_skill_perfection" />
+        <View style="@style/divide_line"
+            android:layout_marginLeft="0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_singer"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:layout_height="@dimen/dimen_50_dip">
+        <ImageView style="@style/iv_tag_person_center"
+            android:src="@drawable/edit_tag_singer" />
+        <TextView android:id="@+id/tv_singer"
+            style="@style/tv_tag_person_center"
+            android:text="@string/wo_xi_huan_de_ge_shou"/>
+        <TextView style="@style/tv_skill_perfection" />
+        <View style="@style/divide_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_food"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:layout_height="@dimen/dimen_50_dip">
+        <ImageView style="@style/iv_tag_person_center"
+            android:src="@drawable/edit_tag_food" />
+        <TextView android:id="@+id/tv_food"
+            style="@style/tv_tag_person_center"
+            android:text="@string/wo_xi_huan_de_mei_shi"/>
+        <TextView style="@style/tv_skill_perfection" />
+        <View style="@style/divide_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_travel"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:layout_height="@dimen/dimen_50_dip">
+        <ImageView style="@style/iv_tag_person_center"
+            android:src="@drawable/edit_tag_travel" />
+        <TextView android:id="@+id/tv_travel"
+            style="@style/tv_tag_person_center"
+            android:text="@string/wo_xi_huan_de_lv_xing"/>
+        <TextView style="@style/tv_skill_perfection" />
+        <View style="@style/divide_line" />
+        <View style="@style/divide_line"
+            android:layout_marginLeft="@dimen/dimen_0_dip"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_wen_da"
+        style="@style/tv_bigtag_person_center"
+        android:text="@string/wen_da"
+        android:layout_marginTop="@dimen/dimen_50_dip"
+        android:layout_marginBottom="@dimen/dimen_20_dip"/>
+    <RelativeLayout
+        android:id="@+id/rel_add_question"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip">
+        <View style="@style/divide_line"
+            android:layout_marginLeft="@dimen/dimen_0_dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/c_245_49_114"
+            android:text="@string/tian_jia_wen_ti"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/dimen_8_dip"
+            android:drawableLeft="@drawable/edit_add_question"/>
+    </RelativeLayout>
+    <View style="@style/divide_line"
+        android:layout_alignParentBottom="true"/>
+    <com.wanduoduo.widget.MyListView
+        android:id="@+id/lv_add_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:paddingBottom="@dimen/dimen_45_dip"/>
+
+</LinearLayout>
